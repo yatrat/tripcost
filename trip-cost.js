@@ -28,7 +28,7 @@ normalizeCityParam();
 /* ---------- DATA ---------- */
 
 let data = null;
-const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v5/trip-data.json";
+const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v5.1/trip-data.json";
 
 fetch(DATA_URL)
   .then(r => r.json())
@@ -300,8 +300,9 @@ function applyCityFromURL() {
   }
 })();
 
-(function injectNoIndexIfParam() {
-  if (window.location.search.length > 0 && !document.querySelector('meta[name="robots"]')) {
+(function injectNoIndexIfCityParam() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.has("city") && !document.querySelector('meta[name="robots"]')) {
     const meta = document.createElement("meta");
     meta.name = "robots";
     meta.content = "noindex, follow";

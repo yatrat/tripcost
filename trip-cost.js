@@ -1,14 +1,35 @@
-let data = null;
+/* ---------- NORMALIZE URL ---------- */
 
-const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v4.8/trip-data.json";
+function normalizeCityParam() {
+  const params = new URLSearchParams(window.location.search);
+  const city = params.get("city");
+
+  if (city) {
+    const norm = city.toLowerCase().replace(/\s+/g, "-");
+    if (city !== norm) {
+      params.set("city", norm);
+      const newUrl = window.location.pathname + "?" + params.toString();
+      window.history.replaceState({}, "", newUrl);
+    }
+  }
+}
+
+normalizeCityParam();
+
+/* ---------- DATA ---------- */
+
+let data = null;
+const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v4.9/trip-data.json";
 
 fetch(DATA_URL)
   .then(r => r.json())
   .then(j => {
     data = j;
     initAutocomplete(Object.keys(data.cities));
-     applyCityFromURL();
+    applyCityFromURL();
   });
+
+/* ---------- ELEMENTS ---------- */
 
 const startCity = document.getElementById("startCity");
 const destInput = document.getElementById("destInput");
@@ -26,9 +47,9 @@ const directMsg = document.getElementById("directMsg");
 const hubMsg = document.getElementById("hubMsg");
 const shareBtn = document.getElementById("copyLink");
 
-calcBtn.onclick = calculate;
+/* ---------- EVENTS ---------- */
 
-/* ---------- TRANSPORT ---------- */
+calcBtn.onclick = calculate;
 
 directTransport.onchange = () => {
   directMsg.innerHTML = transportMessage(directTransport.value);
@@ -39,12 +60,14 @@ hubTransport.onchange = () => {
   hubMsg.innerHTML = transportMessage(hubTransport.value);
 };
 
+/* ---------- TRANSPORT MSG ---------- */
+
 function transportMessage(type) {
   if (type === "own_vehicle") {
     return `⛽ <a href="https://www.yatratools.com/p/fuel-calculator.html" target="_blank">Check fuel price</a>`;
   }
   if (type === "train" || type === "flight") {
-    return `⚠️ Main transport not included — please check official price.`;
+    return ` Main transport not included — please check official price.`;
   }
   return "";
 }
@@ -119,24 +142,15 @@ function renderResult(dest, start, days, people) {
     <p>🍽 Food: ₹${c.food_per_person_per_day} per person / day</p>
     <p>🚌 Local transport: ₹${c.local_transport_per_day} per day</p>`;
 
-  if (busApplied) {
-    html += `<p>🚌 Bus from ${busFrom}: ₹${busPrice} per person</p>`;
-  }
+  if (busApplied) html += `<p>🚌 Bus from ${busFrom}: ₹${busPrice} per person</p>`;
 
-  html += `<hr><p><strong>Estimate for ${people} people, ${days} days:</strong> ₹${total}</p>`;
-  html += `</div>`;
-
-  html += `<div class="load-more-wrapper">
-    <button id="loadMoreBtn" onclick="toggleDetails()">Load more</button>
-  </div>`;
-
-  html += `<div id="details" class="details-section" style="display:none;">
-    ${renderDetails(city)}
-  </div>`;
+  html += `<hr><p><strong>Estimate for ${people} people, ${days} days:</strong> ₹${total}</p></div>`;
+  html += `<div class="load-more-wrapper"><button onclick="toggleDetails()">Load more</button></div>`;
+  html += `<div id="details" class="details-section" style="display:none;">${renderDetails(city)}</div>`;
 
   result.innerHTML = html;
   result.style.display = "block";
-  shareBtn.style.display = "inline-block";
+  if (shareBtn) shareBtn.style.display = "inline-block";
 }
 
 /* ---------- DETAILS ---------- */
@@ -150,18 +164,13 @@ function renderDetails(city) {
     <h4>Scores</h4>
     ${renderScores(city.scores)}
     <div class="itinerary-link-box">
-      <a href="/p/itinerary-planner.html" class="itinerary-link">
-        🗺️ Create day-wise itinerary for this trip
-      </a>
-    </div>
-  `;
+      <a href="/p/itinerary-planner.html" class="itinerary-link">🗺️ Create day-wise itinerary for this trip</a>
+    </div>`;
 }
 
 function renderScores(scores) {
   let h = "";
-  for (let k in scores) {
-    h += `<p><b>${k.replace(/_/g," ")}:</b> ${scores[k]} / 10</p>`;
-  }
+  for (let k in scores) h += `<p><b>${k.replace(/_/g," ")}:</b> ${scores[k]} / 10</p>`;
   return h;
 }
 
@@ -174,7 +183,7 @@ function pick(obj, keys) {
   let h = "";
   keys.forEach(k => {
     if (obj[k]) {
-      let v = Array.isArray(obj[k]) ? obj[k].join(", ") : obj[k];
+      const v = Array.isArray(obj[k]) ? obj[k].join(", ") : obj[k];
       h += `<p><b>${k.replace(/_/g," ")}:</b> ${v}</p>`;
     }
   });
@@ -183,17 +192,14 @@ function pick(obj, keys) {
 
 /* ---------- HUB ---------- */
 
-function onDestinationSelected(destKey) {
-  showHubIfApplicable();
-}
+function onDestinationSelected() { showHubIfApplicable(); }
 
 function showHubIfApplicable() {
   const destKey = destInput.value.toLowerCase().replace(/\s+/g,"-");
   const start = startCity.value.toLowerCase().replace(/\s+/g,"-");
 
-  if (data && data.cities[destKey] && data.cities[destKey].logistics.hub_city) {
+  if (data && data.cities[destKey]?.logistics?.hub_city) {
     const hub = data.cities[destKey].logistics.hub_city;
-
     if (start === hub) {
       hubSection.style.display = "none";
       hubTransport.value = "";
@@ -207,27 +213,25 @@ function showHubIfApplicable() {
     hubTransport.value = "";
   }
 }
-/* ---------- SHARE LINK ---------- */
+
+/* ---------- SHARE ---------- */
 
 setupShareButton();
 
 function setupShareButton() {
-  const btn = document.getElementById("copyLink");
-  if (!btn) return;
+  if (!shareBtn) return;
 
   let status = document.getElementById("copyStatus");
   if (!status) {
     status = document.createElement("span");
     status.id = "copyStatus";
     status.className = "copy-status";
-    btn.after(status);
+    shareBtn.after(status);
   }
 
-  btn.onclick = async () => {
-    const url = buildShareURL();
-
+  shareBtn.onclick = async () => {
     try {
-      await navigator.clipboard.writeText(url);
+      await navigator.clipboard.writeText(buildShareURL());
       status.textContent = "Link copied!";
       setTimeout(() => status.textContent = "", 2000);
     } catch {
@@ -242,14 +246,33 @@ function buildShareURL() {
   return base + "?city=" + encodeURIComponent(city);
 }
 
-/* ---------- LOAD FROM SHORT LINK ---------- */
+/* ---------- LOAD FROM URL ---------- */
 
 function applyCityFromURL() {
-  const params = new URLSearchParams(window.location.search);
-  const city = params.get("city");
-  if (!city || !data || !data.cities[city]) return;
+  const city = new URLSearchParams(window.location.search).get("city");
+  if (!city || !data?.cities?.[city]) return;
 
   destInput.value = city.replace(/-/g, " ");
   showHubIfApplicable();
   calculate();
 }
+
+/* ---------- SEO ---------- */
+
+(function injectCanonical() {
+  if (!document.querySelector('link[rel="canonical"]')) {
+    const link = document.createElement("link");
+    link.rel = "canonical";
+    link.href = window.location.origin + window.location.pathname;
+    document.head.appendChild(link);
+  }
+})();
+
+(function injectNoIndexIfParam() {
+  if (window.location.search.length > 0 && !document.querySelector('meta[name="robots"]')) {
+    const meta = document.createElement("meta");
+    meta.name = "robots";
+    meta.content = "noindex, follow";
+    document.head.appendChild(meta);
+  }
+})();

@@ -1,7 +1,7 @@
-<script>
+
 let data = null;
 
-const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v1/trip-data.json";
+const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v2/trip-data.json";
 
 fetch(DATA_URL)
   .then(r => r.json())
@@ -40,7 +40,7 @@ function initAutocomplete(list) {
     destSug.innerHTML = "";
     if (!q) return destSug.style.display = "none";
 
-    const matches = list.filter(c => c.startsWith(q)).slice(0, 10);
+    const matches = list.filter(c => c.startsWith(q)).slice(0, 8);
 
     matches.forEach(c => {
       const d = document.createElement("div");
@@ -73,7 +73,7 @@ function calculate() {
 
   if (!start) return alert("Select start city");
   if (!data.cities[destKey]) return alert("Select valid destination");
-  if (!Number.isInteger(days) || days < 1 || days > 30) return alert("Days must be 1–30");
+  if (!Number.isInteger(days) || days < 1 || days > 7) return alert("Days must be 1–7");
   if (!Number.isInteger(people) || people < 1 || people > 10) return alert("People must be 1–10");
 
   renderResult(start, destKey, days, people);
@@ -96,8 +96,8 @@ function renderResult(start, dest, days, people) {
   const dt = directTransport.value;
   if (dt === "own_vehicle") {
     html += `<p>🚗 Travel: Own vehicle — <a href="/p/fuel-calculator.html">use fuel calculator</a></p>`;
-  } else {
-    html += `<p>✈️ Travel: ${dt || "—"} — check official site</p>`;
+  } else if (dt) {
+    html += `<p>✈️ Travel: ${dt} — check official site</p>`;
   }
 
   if (city.logistics.hub_city && hubTransport.value === "bus") {
@@ -141,7 +141,7 @@ function toggleDetails() {
 function onDestinationSelected(destKey) {
   const c = data.cities[destKey];
 
-  directTransport.innerHTML = "";
+  directTransport.innerHTML = `<option value="">Select transport</option>`;
   (c.logistics.direct_transport || []).forEach(t => {
     const opt = document.createElement("option");
     opt.value = t;
@@ -153,7 +153,7 @@ function onDestinationSelected(destKey) {
     hubSection.style.display = "block";
     hubCity.value = c.logistics.hub_city;
 
-    hubTransport.innerHTML = "";
+    hubTransport.innerHTML = `<option value="">Select hub transport</option>`;
     (c.logistics.hub_transport || []).forEach(t => {
       const opt = document.createElement("option");
       opt.value = t;
@@ -164,4 +164,4 @@ function onDestinationSelected(destKey) {
     hubSection.style.display = "none";
   }
 }
-</script>
+

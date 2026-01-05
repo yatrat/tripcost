@@ -1,12 +1,13 @@
 let data = null;
 
-const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v4.7/trip-data.json";
+const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v4.8/trip-data.json";
 
 fetch(DATA_URL)
   .then(r => r.json())
   .then(j => {
     data = j;
     initAutocomplete(Object.keys(data.cities));
+     applyCityFromURL();
   });
 
 const startCity = document.getElementById("startCity");
@@ -23,7 +24,7 @@ const hubSection = document.getElementById("hubSection");
 const hubCity = document.getElementById("hubCity");
 const directMsg = document.getElementById("directMsg");
 const hubMsg = document.getElementById("hubMsg");
-const shareBtn = document.getElementById("copyCompareLink");
+const shareBtn = document.getElementById("copyLink");
 
 calcBtn.onclick = calculate;
 
@@ -205,4 +206,50 @@ function showHubIfApplicable() {
     hubCity.value = "";
     hubTransport.value = "";
   }
+}
+/* ---------- SHARE LINK ---------- */
+
+setupShareButton();
+
+function setupShareButton() {
+  const btn = document.getElementById("copyLink");
+  if (!btn) return;
+
+  let status = document.getElementById("copyStatus");
+  if (!status) {
+    status = document.createElement("span");
+    status.id = "copyStatus";
+    status.className = "copy-status";
+    btn.after(status);
+  }
+
+  btn.onclick = async () => {
+    const url = buildShareURL();
+
+    try {
+      await navigator.clipboard.writeText(url);
+      status.textContent = "Link copied!";
+      setTimeout(() => status.textContent = "", 2000);
+    } catch {
+      status.textContent = "Copy failed";
+    }
+  };
+}
+
+function buildShareURL() {
+  const base = window.location.origin + window.location.pathname;
+  const city = destInput.value.toLowerCase().replace(/\s+/g, "-");
+  return base + "?city=" + encodeURIComponent(city);
+}
+
+/* ---------- LOAD FROM SHORT LINK ---------- */
+
+function applyCityFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const city = params.get("city");
+  if (!city || !data || !data.cities[city]) return;
+
+  destInput.value = city.replace(/-/g, " ");
+  showHubIfApplicable();
+  calculate();
 }

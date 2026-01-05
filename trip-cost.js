@@ -51,9 +51,7 @@ function transportMessage(type) {
   if (type === "train" || type === "flight") {
     return `⚠️ Main transport not included — please check official price.`;
   }
-  if (type === "bus") {
-    return `🚌 Bus price will be added automatically if available.`;
-  }
+ 
   return "";
 }
 
@@ -115,36 +113,43 @@ function renderResult(dest, start, days, people) {
     (c.food_per_person_per_day * days * people) +
     (c.local_transport_per_day * days);
 
-  let hubAutoApplied = false;
+let busApplied = false;
+let busPrice = null;
+let busFrom = null;
 
-  if (city.logistics.hub_city) {
-    const hub = city.logistics.hub_city;
-    const startNorm = start.replace(/\s+/g, "-");
+if (city.logistics.hub_city) {
+  const hub = city.logistics.hub_city;
+  const startNorm = start.replace(/\s+/g, "-");
 
-    // Auto include bus if start === hub
+  const price = data.bus_prices[`${hub}-${dest}`] || data.bus_prices[`${dest}-${hub}`];
+
+  if (price) {
     if (startNorm === hub) {
-      const price = data.bus_prices[`${hub}-${dest}`] || data.bus_prices[`${dest}-${hub}`];
-      if (price) {
-        total += price * people;
-        hubAutoApplied = true;
-      }
-    }
-
-    // Normal hub bus selection
-    if (!hubAutoApplied && hubTransport.value === "bus") {
-      const price = data.bus_prices[`${hub}-${dest}`] || data.bus_prices[`${dest}-${hub}`];
-      if (price) total += price * people;
+      busApplied = true;
+      busPrice = price;
+      busFrom = hub;
+    } else if (hubTransport.value === "bus") {
+      busApplied = true;
+      busPrice = price;
+      busFrom = hub;
     }
   }
+}
+
+if (busApplied) {
+  total += busPrice * people;
+}
+
 
   let html = `<h3>${dest.replace(/-/g," ")}</h3>`;
   html += `<p>🏨 Stay: ₹${c.hostel_per_night} per night</p>`;
   html += `<p>🍽 Food: ₹${c.food_per_person_per_day} per person / day</p>`;
   html += `<p>🚌 Local transport: ₹${c.local_transport_per_day} per day</p>`;
 
-  if (hubAutoApplied) {
-    html += `<p>🚌 Bus from ${city.logistics.hub_city} included automatically</p>`;
-  }
+if (busApplied) {
+  html += `<p>🚌 Bus from ${busFrom}: ₹${busPrice} per person</p>`;
+}
+
 
   html += `<hr><p><strong>Estimate for ${people} people, ${days} days:</strong> ₹${total}</p>`;
   html += `<button onclick="toggleDetails()">Load more</button>`;

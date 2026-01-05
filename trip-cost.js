@@ -1,7 +1,7 @@
 <script>
 let data = null;
 
-const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost//itinerary-data.json";
+const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v1/trip-data.json";
 
 fetch(DATA_URL)
   .then(r => r.json())

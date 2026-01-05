@@ -28,7 +28,6 @@
       "logistics": {
         "nearest_airport": "Shillong Airport",
         "nearest_railway": "Guwahati",
-        "direct_transport": [],
         "hub_city": "shillong",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -79,7 +78,6 @@
       "logistics": {
         "nearest_airport": "Srinagar Airport",
         "nearest_railway": "Jammu Tawi",
-        "direct_transport": ["flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -130,7 +128,6 @@
       "logistics": {
         "nearest_airport": "Shillong Airport",
         "nearest_railway": "Guwahati",
-        "direct_transport": [],
         "hub_city": "shillong",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -181,7 +178,6 @@
       "logistics": {
         "nearest_airport": "Jorhat Airport",
         "nearest_railway": "Jorhat",
-        "direct_transport": [],
         "hub_city": "jorhat",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -232,7 +228,6 @@
       "logistics": {
         "nearest_airport": "Bagdogra Airport",
         "nearest_railway": "New Jalpaiguri",
-        "direct_transport": [],
         "hub_city": "gangtok",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -283,7 +278,6 @@
       "logistics": {
         "nearest_airport": "Hollongi Airport",
         "nearest_railway": "Naharlagun",
-        "direct_transport": [],
         "hub_city": "itanagar",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -334,7 +328,6 @@
       "logistics": {
         "nearest_airport": "Bagdogra Airport",
         "nearest_railway": "New Jalpaiguri",
-        "direct_transport": [],
         "hub_city": "gangtok",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -385,7 +378,6 @@
       "logistics": {
         "nearest_airport": "Bagdogra Airport",
         "nearest_railway": "New Jalpaiguri",
-        "direct_transport": [],
         "hub_city": "gangtok",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -436,7 +428,6 @@
       "logistics": {
         "nearest_airport": "Pune Airport",
         "nearest_railway": "Pune",
-        "direct_transport": [],
         "hub_city": "pune",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -487,7 +478,6 @@
       "logistics": {
         "nearest_airport": "Mumbai Airport",
         "nearest_railway": "Panvel",
-        "direct_transport": [],
         "hub_city": "mumbai",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -538,7 +528,6 @@
       "logistics": {
         "nearest_airport": "Goa Airport",
         "nearest_railway": "Madgaon",
-        "direct_transport": ["train", "flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -589,7 +578,6 @@
       "logistics": {
         "nearest_airport": "Pathankot Airport",
         "nearest_railway": "Pathankot",
-        "direct_transport": [],
         "hub_city": "pathankot",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -640,7 +628,6 @@
       "logistics": {
         "nearest_airport": "Chandigarh Airport",
         "nearest_railway": "Kalka",
-        "direct_transport": [],
         "hub_city": "kalka",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -691,7 +678,6 @@
       "logistics": {
         "nearest_airport": "Pantnagar Airport",
         "nearest_railway": "Kathgodam",
-        "direct_transport": [],
         "hub_city": "kathgodam",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -742,7 +728,6 @@
       "logistics": {
         "nearest_airport": "Bhuntar Airport",
         "nearest_railway": "Chandigarh",
-        "direct_transport": [],
         "hub_city": "bhuntar",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -793,7 +778,6 @@
       "logistics": {
         "nearest_airport": "Kozhikode Airport",
         "nearest_railway": "Kozhikode",
-        "direct_transport": [],
         "hub_city": "kozhikode",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -844,7 +828,6 @@
       "logistics": {
         "nearest_airport": "Visakhapatnam Airport",
         "nearest_railway": "Visakhapatnam",
-        "direct_transport": [],
         "hub_city": "visakhapatnam",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -895,7 +878,6 @@
       "logistics": {
         "nearest_airport": "Pantnagar Airport",
         "nearest_railway": "Kathgodam",
-        "direct_transport": [],
         "hub_city": "kathgodam",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -946,7 +928,6 @@
       "logistics": {
         "nearest_airport": "Jolly Grant Airport",
         "nearest_railway": "Kotdwar",
-        "direct_transport": [],
         "hub_city": "kotdwar",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -997,7 +978,6 @@
       "logistics": {
         "nearest_airport": "Bhuntar Airport",
         "nearest_railway": "Bhuntar",
-        "direct_transport": [],
         "hub_city": "bhuntar",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -1048,7 +1028,6 @@
       "logistics": {
         "nearest_airport": "Bangalore Airport",
         "nearest_railway": "Mysore Junction",
-        "direct_transport": ["train", "own_vehicle"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1099,7 +1078,6 @@
       "logistics": {
         "nearest_airport": "Chennai Airport",
         "nearest_railway": "Puducherry Station",
-        "direct_transport": ["train", "own_vehicle"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1150,8 +1128,7 @@
       "logistics": {
         "nearest_airport": "Hubli Airport",
         "nearest_railway": "Hospet",
-        "direct_transport": [],
-        "hub_city": "hospet",
+        "hub_city": "bangalore",
         "hub_transport": ["bus", "own_vehicle"]
       },
       "scores": {
@@ -1201,7 +1178,6 @@
       "logistics": {
         "nearest_airport": "Goa Airport",
         "nearest_railway": "Karwar",
-        "direct_transport": [],
         "hub_city": "karwar",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -1252,7 +1228,6 @@
       "logistics": {
         "nearest_airport": "Mangalore Airport",
         "nearest_railway": "Kaduru",
-        "direct_transport": [],
         "hub_city": "mangalore",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -1303,7 +1278,6 @@
       "logistics": {
         "nearest_airport": "Jodhpur Airport",
         "nearest_railway": "Jodhpur Junction",
-        "direct_transport": ["train", "flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1354,7 +1328,6 @@
       "logistics": {
         "nearest_airport": "Agra Airport",
         "nearest_railway": "Agra Cantt",
-        "direct_transport": ["train", "flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1405,7 +1378,6 @@
       "logistics": {
         "nearest_airport": "Varanasi Airport",
         "nearest_railway": "Varanasi Junction",
-        "direct_transport": ["train", "flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1456,7 +1428,6 @@
       "logistics": {
         "nearest_airport": "Jolly Grant Airport",
         "nearest_railway": "Dehradun Station",
-        "direct_transport": ["train", "flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1507,7 +1478,6 @@
       "logistics": {
         "nearest_airport": "Jammu Airport",
         "nearest_railway": "Jammu Tawi",
-        "direct_transport": ["train", "flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1558,7 +1528,6 @@
       "logistics": {
         "nearest_airport": "Shimla Airport (23km)",
         "nearest_railway": "Shimla Railway Station",
-        "direct_transport": [],
         "hub_city": "kalka",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -1609,7 +1578,6 @@
       "logistics": {
         "nearest_airport": "Bhuntar Airport",
         "nearest_railway": "Chandigarh",
-        "direct_transport": [],
         "hub_city": "chandigarh",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -1660,7 +1628,6 @@
       "logistics": {
         "nearest_airport": "Amritsar Airport",
         "nearest_railway": "Amritsar Station",
-        "direct_transport": ["train", "flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1711,7 +1678,6 @@
       "logistics": {
         "nearest_airport": "Jaipur Airport",
         "nearest_railway": "Jaipur Junction",
-        "direct_transport": ["train", "flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1762,7 +1728,6 @@
       "logistics": {
         "nearest_airport": "Udaipur Airport",
         "nearest_railway": "Udaipur City",
-        "direct_transport": ["train", "flight"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1813,7 +1778,6 @@
       "logistics": {
         "nearest_airport": "Jolly Grant Airport (20km)",
         "nearest_railway": "Haridwar (25km)",
-        "direct_transport": ["own_vehicle"],
         "hub_city": "haridwar",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -1864,7 +1828,6 @@
       "logistics": {
         "nearest_airport": "Jolly Grant Airport",
         "nearest_railway": "Haridwar Station",
-        "direct_transport": ["train", "own_vehicle"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -1915,7 +1878,6 @@
       "logistics": {
         "nearest_airport": "Pantnagar Airport",
         "nearest_railway": "Kathgodam",
-        "direct_transport": [],
         "hub_city": "kathgodam",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -1966,7 +1928,6 @@
       "logistics": {
         "nearest_airport": "Jolly Grant Airport",
         "nearest_railway": "Dehradun",
-        "direct_transport": [],
         "hub_city": "dehradun",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -2017,7 +1978,6 @@
       "logistics": {
         "nearest_airport": "Kangra Airport",
         "nearest_railway": "Pathankot",
-        "direct_transport": [],
         "hub_city": "pathankot",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -2068,8 +2028,7 @@
       "logistics": {
         "nearest_airport": "Coimbatore Airport",
         "nearest_railway": "Mettupalayam",
-        "direct_transport": [],
-        "hub_city": "coimbatore",
+        "hub_city": "bangalore",
         "hub_transport": ["bus", "own_vehicle"]
       },
       "scores": {
@@ -2119,7 +2078,6 @@
       "logistics": {
         "nearest_airport": "Madurai Airport",
         "nearest_railway": "Kodai Road",
-        "direct_transport": [],
         "hub_city": "madurai",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -2170,8 +2128,7 @@
       "logistics": {
         "nearest_airport": "Mangalore Airport",
         "nearest_railway": "Mysuru",
-        "direct_transport": [],
-        "hub_city": "mysuru",
+        "hub_city": "bangalore",
         "hub_transport": ["bus", "own_vehicle"]
       },
       "scores": {
@@ -2221,7 +2178,6 @@
       "logistics": {
         "nearest_airport": "Cochin Airport",
         "nearest_railway": "Aluva",
-        "direct_transport": [],
         "hub_city": "kochi",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -2272,7 +2228,6 @@
       "logistics": {
         "nearest_airport": "Trivandrum Airport",
         "nearest_railway": "Kanyakumari Station",
-        "direct_transport": ["train"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -2323,7 +2278,6 @@
       "logistics": {
         "nearest_airport": "Pune Airport",
         "nearest_railway": "Lonavala Station",
-        "direct_transport": ["train", "own_vehicle"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -2374,7 +2328,6 @@
       "logistics": {
         "nearest_airport": "Mumbai Airport",
         "nearest_railway": "Neral",
-        "direct_transport": ["train", "own_vehicle"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -2425,7 +2378,6 @@
       "logistics": {
         "nearest_airport": "Udaipur Airport",
         "nearest_railway": "Abu Road",
-        "direct_transport": ["train", "own_vehicle"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -2476,7 +2428,6 @@
       "logistics": {
         "nearest_airport": "Pune Airport",
         "nearest_railway": "Satara",
-        "direct_transport": ["own_vehicle"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -2527,7 +2478,6 @@
       "logistics": {
         "nearest_airport": "Bagdogra Airport",
         "nearest_railway": "New Jalpaiguri",
-        "direct_transport": ["own_vehicle"],
         "hub_city": null,
         "hub_transport": null
       },
@@ -2578,7 +2528,6 @@
       "logistics": {
         "nearest_airport": "Pakyong Airport",
         "nearest_railway": "New Jalpaiguri",
-        "direct_transport": [],
         "hub_city": "siliguri",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -2629,7 +2578,6 @@
       "logistics": {
         "nearest_airport": "Bagdogra Airport",
         "nearest_railway": "New Jalpaiguri",
-        "direct_transport": [],
         "hub_city": "siliguri",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -2680,7 +2628,6 @@
       "logistics": {
         "nearest_airport": "Shillong Airport",
         "nearest_railway": "Guwahati",
-        "direct_transport": ["own_vehicle"],
         "hub_city": "guwahati",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -2731,7 +2678,6 @@
       "logistics": {
         "nearest_airport": "Imphal Airport",
         "nearest_railway": "Dimapur",
-        "direct_transport": ["flight"],
         "hub_city": "dimapur",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -2782,7 +2728,6 @@
       "logistics": {
         "nearest_airport": "Bhubaneswar Airport",
         "nearest_railway": "Puri",
-        "direct_transport": [],
         "hub_city": "puri",
         "hub_transport": ["bus", "own_vehicle"]
       },
@@ -2806,9 +2751,9 @@
     }
   },
     "bus_prices": {
-  "coimbatore-ooty": 450,
+  "bangalore-ooty": 450,
   "madurai-kodaikanal": 320,
-  "mysore-coorg": 380,
+  "bangalore-coorg": 380,
   "kochi-munnar": 420,
    "haridwar-rishikesh": 150,
   "kathgodam-nainital": 320,
@@ -2816,7 +2761,7 @@
   "pathankot-dharamshala": 380,
   "kalka-shimla": 180,
   "chandigarh-manali": 650,
-  "hospet-hampi": 180,
+  "bangalore-hampi": 180,
   "karwar-gokarna": 220,
   "mangalore-chikmagalur": 350,
   "kozhikode-wayanad": 420,

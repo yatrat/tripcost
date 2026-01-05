@@ -2803,8 +2803,8 @@
         "nightlife": 3.0,
         "shopping": 5.5
       }
-    },
-    
+    }
+  },
     "bus_prices": {
   "coimbatore-ooty": 450,
   "madurai-kodaikanal": 320,
@@ -2845,5 +2845,5 @@
 
     }
 
-  }
+  
 }

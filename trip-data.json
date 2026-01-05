@@ -1,0 +1,2849 @@
+{
+  "cities": {
+    "mawlynnong": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "Village & Nature",
+        "ideal_duration": "1-2 days",
+        "altitude_m": 1500,
+        "climate": "Subtropical Highland",
+        "avg_temperature": "10-25°C",
+        "peak_season": "October-April",
+        "off_season": "May-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Cleanest Village", "Living Root Bridge"],
+        "best_for": ["Nature", "Peace"],
+        "special_attraction": "Living Root Bridge",
+        "local_cuisine": ["Jadoh", "Tungrymbai"],
+        "adventure_activities": ["Village Walk"],
+        "best_viewpoints": ["Sky View Point"],
+        "best_months": ["Oct", "Nov", "Mar", "Apr"]
+      },
+      "costs": {
+        "hostel_per_night": 1700,
+        "food_per_person_per_day": 600,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Shillong Airport",
+        "nearest_railway": "Guwahati",
+        "direct_transport": [],
+        "hub_city": "shillong",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.5,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.5,
+        "things_to_do": 6.0,
+        "cleanliness": 9.0,
+        "family_friendly": 7.0,
+        "crowd_level": 4.0,
+        "safety": 8.8,
+        "tourist_trap_risk": 2.0,
+        "connectivity": 4.5,
+        "travel_time_from_major_city": 8.0,
+        "road_quality": 6.0,
+        "public_transport": 4.5,
+        "nightlife": 2.0,
+        "shopping": 3.0
+      }
+    },
+
+    "kashmir": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Valley & Scenic",
+        "ideal_duration": "4-6 days",
+        "altitude_m": 1585,
+        "climate": "Cold Alpine",
+        "avg_temperature": "0-20°C",
+        "peak_season": "April-October",
+        "off_season": "November-March",
+        "monsoon_rainfall": "Low",
+        "unesco_heritage": false,
+        "famous_for": ["Dal Lake", "Gulmarg", "Pahalgam", "Houseboats"],
+        "best_for": ["Nature", "Honeymoon", "Photography"],
+        "special_attraction": "Shikara Ride on Dal Lake",
+        "local_cuisine": ["Rogan Josh", "Yakhni", "Kahwa"],
+        "adventure_activities": ["Skiing", "Trekking", "Gondola Ride"],
+        "best_viewpoints": ["Gulmarg", "Sonmarg", "Pahalgam"],
+        "best_months": ["Apr", "May", "Jun", "Sep", "Oct"]
+      },
+      "costs": {
+        "hostel_per_night": 2800,
+        "food_per_person_per_day": 900,
+        "local_transport_per_day": 500
+      },
+      "logistics": {
+        "nearest_airport": "Srinagar Airport",
+        "nearest_railway": "Jammu Tawi",
+        "direct_transport": ["flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 6.5,
+        "weather_comfort": 7.5,
+        "scenic_beauty": 9.5,
+        "things_to_do": 8.0,
+        "cleanliness": 7.0,
+        "family_friendly": 7.5,
+        "crowd_level": 6.0,
+        "safety": 7.0,
+        "tourist_trap_risk": 5.0,
+        "connectivity": 6.5,
+        "travel_time_from_major_city": 8.0,
+        "road_quality": 6.0,
+        "public_transport": 5.5,
+        "nightlife": 4.0,
+        "shopping": 6.0
+      }
+    },
+
+    "cherrapunji": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "Rainforest & Waterfalls",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1484,
+        "climate": "Subtropical Highland",
+        "avg_temperature": "10-25°C",
+        "peak_season": "October-April",
+        "off_season": "May-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Living Root Bridges", "Waterfalls", "Rainfall"],
+        "best_for": ["Nature", "Trekking", "Photography"],
+        "special_attraction": "Double Decker Living Root Bridge",
+        "local_cuisine": ["Jadoh", "Tungrymbai"],
+        "adventure_activities": ["Trekking", "Caving"],
+        "best_viewpoints": ["Nohkalikai Falls", "Seven Sisters Falls"],
+        "best_months": ["Oct", "Nov", "Mar", "Apr"]
+      },
+      "costs": {
+        "hostel_per_night": 1800,
+        "food_per_person_per_day": 600,
+        "local_transport_per_day": 400
+      },
+      "logistics": {
+        "nearest_airport": "Shillong Airport",
+        "nearest_railway": "Guwahati",
+        "direct_transport": [],
+        "hub_city": "shillong",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.5,
+        "weather_comfort": 7.0,
+        "scenic_beauty": 9.0,
+        "things_to_do": 7.0,
+        "cleanliness": 8.0,
+        "family_friendly": 6.5,
+        "crowd_level": 5.0,
+        "safety": 8.5,
+        "tourist_trap_risk": 3.5,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 8.0,
+        "road_quality": 6.0,
+        "public_transport": 5.0,
+        "nightlife": 3.5,
+        "shopping": 4.0
+      }
+    },
+
+    "majuli": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "Cultural Island",
+        "ideal_duration": "2 days",
+        "altitude_m": 85,
+        "climate": "Humid Subtropical",
+        "avg_temperature": "15-35°C",
+        "peak_season": "October-March",
+        "off_season": "April-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Satras", "River Island", "Culture"],
+        "best_for": ["Culture", "Peace", "Photography"],
+        "special_attraction": "Neo-Vaishnavite Monasteries",
+        "local_cuisine": ["Pitha", "Fish Curry"],
+        "adventure_activities": ["Cycling", "Boat Ride"],
+        "best_viewpoints": ["Brahmaputra Banks"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan"]
+      },
+      "costs": {
+        "hostel_per_night": 1400,
+        "food_per_person_per_day": 500,
+        "local_transport_per_day": 250
+      },
+      "logistics": {
+        "nearest_airport": "Jorhat Airport",
+        "nearest_railway": "Jorhat",
+        "direct_transport": [],
+        "hub_city": "jorhat",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 8.0,
+        "weather_comfort": 7.0,
+        "scenic_beauty": 7.5,
+        "things_to_do": 6.0,
+        "cleanliness": 7.5,
+        "family_friendly": 7.0,
+        "crowd_level": 4.0,
+        "safety": 8.5,
+        "tourist_trap_risk": 2.5,
+        "connectivity": 4.5,
+        "travel_time_from_major_city": 8.0,
+        "road_quality": 5.5,
+        "public_transport": 4.5,
+        "nightlife": 2.0,
+        "shopping": 3.5
+      }
+    },
+
+    "lachung": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "High Altitude Village",
+        "ideal_duration": "2 days",
+        "altitude_m": 2600,
+        "climate": "Cold Alpine",
+        "avg_temperature": "-5-15°C",
+        "peak_season": "April-June & September-October",
+        "off_season": "November-March",
+        "monsoon_rainfall": "Low",
+        "unesco_heritage": false,
+        "famous_for": ["Yumthang Valley", "Snow Peaks"],
+        "best_for": ["Nature", "Adventure"],
+        "special_attraction": "Yumthang Valley",
+        "local_cuisine": ["Thukpa", "Momos"],
+        "adventure_activities": ["Snow Walk"],
+        "best_viewpoints": ["Yumthang Route"],
+        "best_months": ["May", "Jun", "Sep", "Oct"]
+      },
+      "costs": {
+        "hostel_per_night": 1800,
+        "food_per_person_per_day": 600,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Bagdogra Airport",
+        "nearest_railway": "New Jalpaiguri",
+        "direct_transport": [],
+        "hub_city": "gangtok",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 6.8,
+        "weather_comfort": 6.5,
+        "scenic_beauty": 9.2,
+        "things_to_do": 6.5,
+        "cleanliness": 7.5,
+        "family_friendly": 5.5,
+        "crowd_level": 3.0,
+        "safety": 7.8,
+        "tourist_trap_risk": 3.0,
+        "connectivity": 3.5,
+        "travel_time_from_major_city": 9.0,
+        "road_quality": 4.5,
+        "public_transport": 3.0,
+        "nightlife": 1.5,
+        "shopping": 2.5
+      }
+    },
+
+   "ziro": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "Valley & Culture",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1688,
+        "climate": "Temperate",
+        "avg_temperature": "5-25°C",
+        "peak_season": "March-October",
+        "off_season": "November-February",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Ziro Music Festival", "Apatani Culture"],
+        "best_for": ["Culture", "Nature"],
+        "special_attraction": "Ziro Music Festival",
+        "local_cuisine": ["Bamboo Shoot Dishes"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Pine Hills"],
+        "best_months": ["Mar", "Apr", "Sep", "Oct"]
+      },
+      "costs": {
+        "hostel_per_night": 1600,
+        "food_per_person_per_day": 550,
+        "local_transport_per_day": 300
+      },
+      "logistics": {
+        "nearest_airport": "Hollongi Airport",
+        "nearest_railway": "Naharlagun",
+        "direct_transport": [],
+        "hub_city": "itanagar",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.8,
+        "weather_comfort": 7.5,
+        "scenic_beauty": 8.5,
+        "things_to_do": 6.5,
+        "cleanliness": 8.0,
+        "family_friendly": 6.5,
+        "crowd_level": 3.5,
+        "safety": 8.8,
+        "tourist_trap_risk": 2.0,
+        "connectivity": 4.5,
+        "travel_time_from_major_city": 8.5,
+        "road_quality": 5.5,
+        "public_transport": 4.0,
+        "nightlife": 2.0,
+        "shopping": 3.0
+      }
+    },
+
+    "lachen": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "High Altitude Village",
+        "ideal_duration": "2 days",
+        "altitude_m": 2750,
+        "climate": "Cold Alpine",
+        "avg_temperature": "-5-15°C",
+        "peak_season": "April-June & September-October",
+        "off_season": "November-March",
+        "monsoon_rainfall": "Low",
+        "unesco_heritage": false,
+        "famous_for": ["Gurudongmar Lake", "Snow Peaks"],
+        "best_for": ["Adventure", "Nature"],
+        "special_attraction": "Gurudongmar Lake",
+        "local_cuisine": ["Thukpa", "Momos"],
+        "adventure_activities": ["Snow Trekking"],
+        "best_viewpoints": ["Gurudongmar Route"],
+        "best_months": ["May", "Jun", "Sep", "Oct"]
+      },
+      "costs": {
+        "hostel_per_night": 1800,
+        "food_per_person_per_day": 600,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Bagdogra Airport",
+        "nearest_railway": "New Jalpaiguri",
+        "direct_transport": [],
+        "hub_city": "gangtok",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 6.8,
+        "weather_comfort": 6.5,
+        "scenic_beauty": 9.0,
+        "things_to_do": 6.0,
+        "cleanliness": 7.5,
+        "family_friendly": 5.5,
+        "crowd_level": 3.0,
+        "safety": 7.8,
+        "tourist_trap_risk": 3.0,
+        "connectivity": 3.5,
+        "travel_time_from_major_city": 9.0,
+        "road_quality": 4.5,
+        "public_transport": 3.0,
+        "nightlife": 1.5,
+        "shopping": 2.5
+      }
+    },
+
+    "pelling": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "Hill Town",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 2150,
+        "climate": "Temperate",
+        "avg_temperature": "5-22°C",
+        "peak_season": "March-June & September-November",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Kanchenjunga Views", "Pemayangtse Monastery"],
+        "best_for": ["Nature", "Peace"],
+        "special_attraction": "Kanchenjunga Viewpoint",
+        "local_cuisine": ["Momos", "Thukpa"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Pelling Skywalk"],
+        "best_months": ["Mar", "Apr", "May", "Oct", "Nov"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 650,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Bagdogra Airport",
+        "nearest_railway": "New Jalpaiguri",
+        "direct_transport": [],
+        "hub_city": "gangtok",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.8,
+        "things_to_do": 6.8,
+        "cleanliness": 7.8,
+        "family_friendly": 7.0,
+        "crowd_level": 5.0,
+        "safety": 8.2,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 8.0,
+        "road_quality": 5.8,
+        "public_transport": 4.8,
+        "nightlife": 2.5,
+        "shopping": 4.5
+      }
+    },
+
+    "panchgani": {
+      "meta": {
+        "region": "west",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2 days",
+        "altitude_m": 1334,
+        "climate": "Tropical Highland",
+        "avg_temperature": "12-28°C",
+        "peak_season": "October-February",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Table Land", "Parsi Point"],
+        "best_for": ["Peace", "Couples"],
+        "special_attraction": "Table Land",
+        "local_cuisine": ["Strawberries", "Corn Patties"],
+        "adventure_activities": ["Paragliding"],
+        "best_viewpoints": ["Parsi Point"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 720,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Pune Airport",
+        "nearest_railway": "Pune",
+        "direct_transport": [],
+        "hub_city": "pune",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.0,
+        "things_to_do": 6.5,
+        "cleanliness": 7.5,
+        "family_friendly": 7.2,
+        "crowd_level": 5.5,
+        "safety": 8.3,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 6.5,
+        "travel_time_from_major_city": 5.8,
+        "road_quality": 6.5,
+        "public_transport": 5.8,
+        "nightlife": 3.5,
+        "shopping": 4.8
+      }
+    },
+
+    "alibaug": {
+      "meta": {
+        "region": "west",
+        "travel_type": "Beach Town",
+        "ideal_duration": "1-2 days",
+        "altitude_m": 8,
+        "climate": "Tropical",
+        "avg_temperature": "22-34°C",
+        "peak_season": "October-February",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Alibaug Beach", "Kolaba Fort"],
+        "best_for": ["Weekend", "Relax"],
+        "special_attraction": "Kolaba Fort",
+        "local_cuisine": ["Seafood", "Konkani Food"],
+        "adventure_activities": ["Jet Ski"],
+        "best_viewpoints": ["Kolaba Fort"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 800,
+        "local_transport_per_day": 400
+      },
+      "logistics": {
+        "nearest_airport": "Mumbai Airport",
+        "nearest_railway": "Panvel",
+        "direct_transport": [],
+        "hub_city": "mumbai",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 6.8,
+        "weather_comfort": 7.2,
+        "scenic_beauty": 7.8,
+        "things_to_do": 6.5,
+        "cleanliness": 7.0,
+        "family_friendly": 7.5,
+        "crowd_level": 6.0,
+        "safety": 8.2,
+        "tourist_trap_risk": 5.0,
+        "connectivity": 6.5,
+        "travel_time_from_major_city": 5.0,
+        "road_quality": 6.5,
+        "public_transport": 5.5,
+        "nightlife": 3.5,
+        "shopping": 5.0
+      }
+    },
+
+    "goa": {
+      "meta": {
+        "region": "west",
+        "travel_type": "Beach",
+        "ideal_duration": "3-5 days",
+        "altitude_m": 15,
+        "climate": "Tropical",
+        "avg_temperature": "22-34°C",
+        "peak_season": "November-February",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Beaches", "Nightlife", "Portuguese Architecture"],
+        "best_for": ["Friends", "Party", "Relax"],
+        "special_attraction": "Baga & Anjuna Beaches",
+        "local_cuisine": ["Seafood", "Vindaloo"],
+        "adventure_activities": ["Scuba Diving", "Parasailing"],
+        "best_viewpoints": ["Chapora Fort"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2400,
+        "food_per_person_per_day": 900,
+        "local_transport_per_day": 450
+      },
+      "logistics": {
+        "nearest_airport": "Goa Airport",
+        "nearest_railway": "Madgaon",
+        "direct_transport": ["train", "flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 6.8,
+        "weather_comfort": 7.5,
+        "scenic_beauty": 8.5,
+        "things_to_do": 9.0,
+        "cleanliness": 7.0,
+        "family_friendly": 7.5,
+        "crowd_level": 7.5,
+        "safety": 8.0,
+        "tourist_trap_risk": 6.0,
+        "connectivity": 8.5,
+        "travel_time_from_major_city": 7.0,
+        "road_quality": 7.0,
+        "public_transport": 6.0,
+        "nightlife": 9.0,
+        "shopping": 7.0
+      }
+    },
+
+    "dalhousie": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1970,
+        "climate": "Temperate",
+        "avg_temperature": "5-22°C",
+        "peak_season": "March-June",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Khajjiar", "Colonial Architecture"],
+        "best_for": ["Family", "Peace"],
+        "special_attraction": "Khajjiar",
+        "local_cuisine": ["Chana Madra", "Siddu"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Dainkund Peak"],
+        "best_months": ["Mar", "Apr", "May", "Jun"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 720,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Pathankot Airport",
+        "nearest_railway": "Pathankot",
+        "direct_transport": [],
+        "hub_city": "pathankot",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 8.2,
+        "things_to_do": 6.8,
+        "cleanliness": 7.5,
+        "family_friendly": 7.8,
+        "crowd_level": 5.5,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 7.8,
+        "road_quality": 6.0,
+        "public_transport": 5.0,
+        "nightlife": 2.5,
+        "shopping": 4.5
+      }
+    },
+
+    "kasauli": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill & Peace",
+        "ideal_duration": "1-2 days",
+        "altitude_m": 1927,
+        "climate": "Temperate",
+        "avg_temperature": "8-25°C",
+        "peak_season": "March-June",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Monkey Point", "Colonial Churches"],
+        "best_for": ["Peace", "Couples"],
+        "special_attraction": "Monkey Point",
+        "local_cuisine": ["Himachali Food"],
+        "adventure_activities": ["Walking Trails"],
+        "best_viewpoints": ["Monkey Point"],
+        "best_months": ["Mar", "Apr", "May", "Jun"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 360
+      },
+      "logistics": {
+        "nearest_airport": "Chandigarh Airport",
+        "nearest_railway": "Kalka",
+        "direct_transport": [],
+        "hub_city": "kalka",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 8.0,
+        "things_to_do": 6.0,
+        "cleanliness": 7.8,
+        "family_friendly": 7.0,
+        "crowd_level": 5.0,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 6.5,
+        "road_quality": 6.5,
+        "public_transport": 5.2,
+        "nightlife": 2.5,
+        "shopping": 4.0
+      }
+    },
+
+    "almora": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill Town",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1638,
+        "climate": "Temperate",
+        "avg_temperature": "5-22°C",
+        "peak_season": "March-June",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Bright End Corner", "Kasar Devi"],
+        "best_for": ["Peace", "Nature"],
+        "special_attraction": "Bright End Corner",
+        "local_cuisine": ["Kumaoni Thali"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Bright End Corner"],
+        "best_months": ["Mar", "Apr", "May", "Jun"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 360
+      },
+      "logistics": {
+        "nearest_airport": "Pantnagar Airport",
+        "nearest_railway": "Kathgodam",
+        "direct_transport": [],
+        "hub_city": "kathgodam",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 8.2,
+        "things_to_do": 6.5,
+        "cleanliness": 7.5,
+        "family_friendly": 7.2,
+        "crowd_level": 5.0,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 7.5,
+        "road_quality": 6.2,
+        "public_transport": 5.0,
+        "nightlife": 2.5,
+        "shopping": 4.5
+      }
+    },
+
+    "kullu": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Valley & Adventure",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1220,
+        "climate": "Cold Temperate",
+        "avg_temperature": "5-22°C",
+        "peak_season": "March-June & September-November",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Kullu Dussehra", "Beas River"],
+        "best_for": ["Adventure", "Nature"],
+        "special_attraction": "Kullu Dussehra",
+        "local_cuisine": ["Siddu", "Thukpa"],
+        "adventure_activities": ["River Rafting"],
+        "best_viewpoints": ["Beas River Banks"],
+        "best_months": ["Mar", "Apr", "May", "Oct", "Nov"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 750,
+        "local_transport_per_day": 400
+      },
+      "logistics": {
+        "nearest_airport": "Bhuntar Airport",
+        "nearest_railway": "Chandigarh",
+        "direct_transport": [],
+        "hub_city": "bhuntar",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.5,
+        "things_to_do": 7.5,
+        "cleanliness": 7.2,
+        "family_friendly": 7.0,
+        "crowd_level": 6.0,
+        "safety": 8.2,
+        "tourist_trap_risk": 4.8,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 7.8,
+        "road_quality": 6.0,
+        "public_transport": 5.0,
+        "nightlife": 3.5,
+        "shopping": 5.0
+      }
+    },
+
+    "wayanad": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Hill & Forest",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 700,
+        "climate": "Tropical Highland",
+        "avg_temperature": "15-28°C",
+        "peak_season": "October-March",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Edakkal Caves", "Chembra Peak"],
+        "best_for": ["Nature", "Couples"],
+        "special_attraction": "Edakkal Caves",
+        "local_cuisine": ["Malabar Cuisine"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Chembra Peak"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Kozhikode Airport",
+        "nearest_railway": "Kozhikode",
+        "direct_transport": [],
+        "hub_city": "kozhikode",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.5,
+        "things_to_do": 7.0,
+        "cleanliness": 7.5,
+        "family_friendly": 7.2,
+        "crowd_level": 5.5,
+        "safety": 8.2,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 5.8,
+        "travel_time_from_major_city": 7.5,
+        "road_quality": 6.2,
+        "public_transport": 5.0,
+        "nightlife": 3.0,
+        "shopping": 4.8
+      }
+    },
+
+    "araku-valley": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Hill & Tribal",
+        "ideal_duration": "2 days",
+        "altitude_m": 911,
+        "climate": "Temperate",
+        "avg_temperature": "12-28°C",
+        "peak_season": "October-February",
+        "off_season": "March-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Coffee Plantations", "Borra Caves"],
+        "best_for": ["Nature", "Culture"],
+        "special_attraction": "Borra Caves",
+        "local_cuisine": ["Tribal Cuisine"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Galikonda"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 1900,
+        "food_per_person_per_day": 680,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Visakhapatnam Airport",
+        "nearest_railway": "Visakhapatnam",
+        "direct_transport": [],
+        "hub_city": "visakhapatnam",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.5,
+        "weather_comfort": 7.6,
+        "scenic_beauty": 8.0,
+        "things_to_do": 6.8,
+        "cleanliness": 7.0,
+        "family_friendly": 7.0,
+        "crowd_level": 5.0,
+        "safety": 8.0,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 7.0,
+        "road_quality": 6.0,
+        "public_transport": 5.0,
+        "nightlife": 2.5,
+        "shopping": 4.5
+      }
+    },
+
+    "ranikhet": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1869,
+        "climate": "Temperate",
+        "avg_temperature": "5-22°C",
+        "peak_season": "March-June",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Jhula Devi Temple", "Golf Course"],
+        "best_for": ["Peace", "Nature"],
+        "special_attraction": "Ranikhet Golf Course",
+        "local_cuisine": ["Kumaoni Food"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Chaubatia Gardens"],
+        "best_months": ["Mar", "Apr", "May", "Jun"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 720,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Pantnagar Airport",
+        "nearest_railway": "Kathgodam",
+        "direct_transport": [],
+        "hub_city": "kathgodam",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 8.2,
+        "things_to_do": 6.5,
+        "cleanliness": 7.5,
+        "family_friendly": 7.2,
+        "crowd_level": 5.0,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 7.2,
+        "road_quality": 6.2,
+        "public_transport": 5.0,
+        "nightlife": 2.5,
+        "shopping": 4.5
+      }
+    },
+
+    "lansdowne": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill & Peace",
+        "ideal_duration": "2 days",
+        "altitude_m": 1706,
+        "climate": "Temperate",
+        "avg_temperature": "8-25°C",
+        "peak_season": "March-June",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Bhulla Tal", "St Mary's Church"],
+        "best_for": ["Peace", "Couples"],
+        "special_attraction": "Bhulla Tal Lake",
+        "local_cuisine": ["Garhwali Food"],
+        "adventure_activities": ["Hiking"],
+        "best_viewpoints": ["Tip N Top"],
+        "best_months": ["Mar", "Apr", "May", "Jun"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 360
+      },
+      "logistics": {
+        "nearest_airport": "Jolly Grant Airport",
+        "nearest_railway": "Kotdwar",
+        "direct_transport": [],
+        "hub_city": "kotdwar",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 8.0,
+        "things_to_do": 6.2,
+        "cleanliness": 7.8,
+        "family_friendly": 7.0,
+        "crowd_level": 5.0,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 6.8,
+        "road_quality": 6.5,
+        "public_transport": 5.2,
+        "nightlife": 2.5,
+        "shopping": 4.0
+      }
+    },
+
+    "kasol": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill & Backpacker",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1580,
+        "climate": "Cold Temperate",
+        "avg_temperature": "5-20°C",
+        "peak_season": "March-June & September-November",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Parvati Valley", "Israeli Cafes"],
+        "best_for": ["Backpackers", "Nature"],
+        "special_attraction": "Parvati Valley",
+        "local_cuisine": ["Israeli Food", "Hummus"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Chalal Trek"],
+        "best_months": ["Mar", "Apr", "May", "Oct", "Nov"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 720,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Bhuntar Airport",
+        "nearest_railway": "Bhuntar",
+        "direct_transport": [],
+        "hub_city": "bhuntar",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.8,
+        "things_to_do": 7.5,
+        "cleanliness": 6.8,
+        "family_friendly": 6.5,
+        "crowd_level": 6.0,
+        "safety": 8.0,
+        "tourist_trap_risk": 5.0,
+        "connectivity": 5.2,
+        "travel_time_from_major_city": 7.5,
+        "road_quality": 6.0,
+        "public_transport": 5.0,
+        "nightlife": 4.5,
+        "shopping": 4.5
+      }
+    },
+
+    "mysore": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Heritage City",
+        "ideal_duration": "2 days",
+        "altitude_m": 770,
+        "climate": "Tropical Savanna",
+        "avg_temperature": "15-35°C",
+        "peak_season": "October-February",
+        "off_season": "March-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": true,
+        "famous_for": ["Mysore Palace", "Chamundi Hill"],
+        "best_for": ["History", "Family"],
+        "special_attraction": "Mysore Palace",
+        "local_cuisine": ["Mysore Pak", "Dosa"],
+        "adventure_activities": [],
+        "best_viewpoints": ["Chamundi Hill"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 750,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Bangalore Airport",
+        "nearest_railway": "Mysore Junction",
+        "direct_transport": ["train", "own_vehicle"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.8,
+        "weather_comfort": 7.5,
+        "scenic_beauty": 7.2,
+        "things_to_do": 7.5,
+        "cleanliness": 7.5,
+        "family_friendly": 8.0,
+        "crowd_level": 6.5,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 8.0,
+        "travel_time_from_major_city": 5.5,
+        "road_quality": 7.5,
+        "public_transport": 7.0,
+        "nightlife": 4.5,
+        "shopping": 6.5
+      }
+    },
+
+    "pondicherry": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Beach & Heritage",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 3,
+        "climate": "Tropical",
+        "avg_temperature": "22-34°C",
+        "peak_season": "October-February",
+        "off_season": "March-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["French Quarter", "Promenade Beach"],
+        "best_for": ["Couples", "Relax"],
+        "special_attraction": "White Town",
+        "local_cuisine": ["Creole Food", "Seafood"],
+        "adventure_activities": ["Scuba Diving"],
+        "best_viewpoints": ["Promenade Beach"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 800,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Chennai Airport",
+        "nearest_railway": "Puducherry Station",
+        "direct_transport": ["train", "own_vehicle"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 7.0,
+        "scenic_beauty": 7.5,
+        "things_to_do": 7.2,
+        "cleanliness": 7.8,
+        "family_friendly": 7.5,
+        "crowd_level": 6.0,
+        "safety": 8.2,
+        "tourist_trap_risk": 5.0,
+        "connectivity": 7.8,
+        "travel_time_from_major_city": 6.0,
+        "road_quality": 7.2,
+        "public_transport": 6.8,
+        "nightlife": 5.5,
+        "shopping": 6.2
+      }
+    },
+
+    "hampi": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Heritage Ruins",
+        "ideal_duration": "2 days",
+        "altitude_m": 467,
+        "climate": "Hot Semi-Arid",
+        "avg_temperature": "15-40°C",
+        "peak_season": "October-February",
+        "off_season": "March-September",
+        "monsoon_rainfall": "Low",
+        "unesco_heritage": true,
+        "famous_for": ["Vijayanagara Ruins", "Stone Chariot"],
+        "best_for": ["History", "Photography"],
+        "special_attraction": "Vijayanagara Ruins",
+        "local_cuisine": ["South Indian Meals"],
+        "adventure_activities": ["Cycling"],
+        "best_viewpoints": ["Matanga Hill"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 1800,
+        "food_per_person_per_day": 650,
+        "local_transport_per_day": 320
+      },
+      "logistics": {
+        "nearest_airport": "Hubli Airport",
+        "nearest_railway": "Hospet",
+        "direct_transport": [],
+        "hub_city": "hospet",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 8.0,
+        "weather_comfort": 6.2,
+        "scenic_beauty": 7.8,
+        "things_to_do": 7.2,
+        "cleanliness": 7.0,
+        "family_friendly": 6.8,
+        "crowd_level": 5.8,
+        "safety": 8.0,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 7.5,
+        "road_quality": 6.0,
+        "public_transport": 5.0,
+        "nightlife": 3.0,
+        "shopping": 4.5
+      }
+    },
+
+    "gokarna": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Beach & Spiritual",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 12,
+        "climate": "Tropical",
+        "avg_temperature": "22-34°C",
+        "peak_season": "October-February",
+        "off_season": "March-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Om Beach", "Mahabaleshwar Temple"],
+        "best_for": ["Relax", "Spiritual", "Backpackers"],
+        "special_attraction": "Om Beach",
+        "local_cuisine": ["Seafood", "South Indian Meals"],
+        "adventure_activities": ["Beach Trek"],
+        "best_viewpoints": ["Om Beach Cliff"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Goa Airport",
+        "nearest_railway": "Karwar",
+        "direct_transport": [],
+        "hub_city": "karwar",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.5,
+        "weather_comfort": 7.2,
+        "scenic_beauty": 8.0,
+        "things_to_do": 7.0,
+        "cleanliness": 7.5,
+        "family_friendly": 7.0,
+        "crowd_level": 5.5,
+        "safety": 8.2,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 7.0,
+        "road_quality": 6.0,
+        "public_transport": 5.0,
+        "nightlife": 3.5,
+        "shopping": 4.8
+      }
+    },
+
+    "chikmagalur": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Hill & Coffee",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1090,
+        "climate": "Tropical Highland",
+        "avg_temperature": "12-28°C",
+        "peak_season": "October-March",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Coffee Estates", "Mullayanagiri Peak"],
+        "best_for": ["Nature", "Couples"],
+        "special_attraction": "Mullayanagiri Peak",
+        "local_cuisine": ["Akki Roti", "Filter Coffee"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Mullayanagiri"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 720,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Mangalore Airport",
+        "nearest_railway": "Kaduru",
+        "direct_transport": [],
+        "hub_city": "mangalore",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.5,
+        "things_to_do": 7.2,
+        "cleanliness": 7.5,
+        "family_friendly": 7.2,
+        "crowd_level": 5.5,
+        "safety": 8.3,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 7.2,
+        "road_quality": 6.2,
+        "public_transport": 5.0,
+        "nightlife": 3.0,
+        "shopping": 4.8
+      }
+    },
+
+    "jodhpur": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Heritage City",
+        "ideal_duration": "2 days",
+        "altitude_m": 231,
+        "climate": "Hot Desert",
+        "avg_temperature": "10-42°C",
+        "peak_season": "October-March",
+        "off_season": "April-September",
+        "monsoon_rainfall": "Low",
+        "unesco_heritage": false,
+        "famous_for": ["Mehrangarh Fort", "Blue City"],
+        "best_for": ["History", "Architecture"],
+        "special_attraction": "Mehrangarh Fort",
+        "local_cuisine": ["Dal Baati", "Mirchi Bada"],
+        "adventure_activities": ["Ziplining"],
+        "best_viewpoints": ["Mehrangarh Fort"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 800,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Jodhpur Airport",
+        "nearest_railway": "Jodhpur Junction",
+        "direct_transport": ["train", "flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.5,
+        "weather_comfort": 6.2,
+        "scenic_beauty": 7.8,
+        "things_to_do": 7.5,
+        "cleanliness": 7.0,
+        "family_friendly": 7.5,
+        "crowd_level": 6.5,
+        "safety": 8.2,
+        "tourist_trap_risk": 4.8,
+        "connectivity": 8.0,
+        "travel_time_from_major_city": 6.8,
+        "road_quality": 7.2,
+        "public_transport": 7.0,
+        "nightlife": 4.5,
+        "shopping": 6.5
+      }
+    },
+
+    "agra": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Heritage City",
+        "ideal_duration": "1-2 days",
+        "altitude_m": 171,
+        "climate": "Hot Semi-Arid",
+        "avg_temperature": "10-40°C",
+        "peak_season": "October-March",
+        "off_season": "April-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": true,
+        "famous_for": ["Taj Mahal", "Agra Fort"],
+        "best_for": ["History", "Architecture"],
+        "special_attraction": "Taj Mahal",
+        "local_cuisine": ["Petha", "Bedai"],
+        "adventure_activities": [],
+        "best_viewpoints": ["Mehtab Bagh"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 850,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Agra Airport",
+        "nearest_railway": "Agra Cantt",
+        "direct_transport": ["train", "flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 6.0,
+        "scenic_beauty": 8.5,
+        "things_to_do": 7.8,
+        "cleanliness": 6.8,
+        "family_friendly": 7.5,
+        "crowd_level": 7.0,
+        "safety": 8.0,
+        "tourist_trap_risk": 6.0,
+        "connectivity": 8.2,
+        "travel_time_from_major_city": 6.0,
+        "road_quality": 7.0,
+        "public_transport": 7.2,
+        "nightlife": 4.0,
+        "shopping": 6.0
+      }
+    },
+
+    "varanasi": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Spiritual City",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 80,
+        "climate": "Humid Subtropical",
+        "avg_temperature": "10-38°C",
+        "peak_season": "October-March",
+        "off_season": "April-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Ganga Ghats", "Kashi Vishwanath"],
+        "best_for": ["Spiritual", "Culture"],
+        "special_attraction": "Evening Ganga Aarti",
+        "local_cuisine": ["Kachori Sabzi", "Malaiyo"],
+        "adventure_activities": ["Boat Ride"],
+        "best_viewpoints": ["Dashashwamedh Ghat"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Varanasi Airport",
+        "nearest_railway": "Varanasi Junction",
+        "direct_transport": ["train", "flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 8.0,
+        "weather_comfort": 6.5,
+        "scenic_beauty": 7.5,
+        "things_to_do": 7.5,
+        "cleanliness": 6.0,
+        "family_friendly": 7.2,
+        "crowd_level": 7.0,
+        "safety": 8.0,
+        "tourist_trap_risk": 5.5,
+        "connectivity": 8.0,
+        "travel_time_from_major_city": 6.5,
+        "road_quality": 7.0,
+        "public_transport": 7.5,
+        "nightlife": 3.5,
+        "shopping": 6.0
+      }
+    },
+
+    "dehradun": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Valley City",
+        "ideal_duration": "2 days",
+        "altitude_m": 640,
+        "climate": "Humid Subtropical",
+        "avg_temperature": "10-35°C",
+        "peak_season": "October-March",
+        "off_season": "June-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Forest Research Institute", "Sahastradhara"],
+        "best_for": ["Nature", "Relax"],
+        "special_attraction": "FRI Campus",
+        "local_cuisine": ["Garhwali Thali"],
+        "adventure_activities": ["Hiking"],
+        "best_viewpoints": ["Sahastradhara"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 750,
+        "local_transport_per_day": 360
+      },
+      "logistics": {
+        "nearest_airport": "Jolly Grant Airport",
+        "nearest_railway": "Dehradun Station",
+        "direct_transport": ["train", "flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.5,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 7.5,
+        "things_to_do": 6.8,
+        "cleanliness": 7.5,
+        "family_friendly": 7.5,
+        "crowd_level": 5.8,
+        "safety": 8.3,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 8.0,
+        "travel_time_from_major_city": 5.5,
+        "road_quality": 7.5,
+        "public_transport": 7.2,
+        "nightlife": 4.0,
+        "shopping": 5.8
+      }
+    },
+
+    "jammu": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Spiritual Gateway",
+        "ideal_duration": "1-2 days",
+        "altitude_m": 327,
+        "climate": "Humid Subtropical",
+        "avg_temperature": "8-40°C",
+        "peak_season": "October-March",
+        "off_season": "April-September",
+        "monsoon_rainfall": "Low",
+        "unesco_heritage": false,
+        "famous_for": ["Vaishno Devi Base", "Raghunath Temple"],
+        "best_for": ["Spiritual", "Transit"],
+        "special_attraction": "Vaishno Devi Base Camp",
+        "local_cuisine": ["Rajma Chawal", "Kaladi Kulcha"],
+        "adventure_activities": [],
+        "best_viewpoints": ["Bahu Fort"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 340
+      },
+      "logistics": {
+        "nearest_airport": "Jammu Airport",
+        "nearest_railway": "Jammu Tawi",
+        "direct_transport": ["train", "flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.8,
+        "weather_comfort": 6.8,
+        "scenic_beauty": 7.0,
+        "things_to_do": 6.5,
+        "cleanliness": 7.0,
+        "family_friendly": 7.5,
+        "crowd_level": 6.0,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 8.0,
+        "travel_time_from_major_city": 6.5,
+        "road_quality": 7.0,
+        "public_transport": 7.0,
+        "nightlife": 3.5,
+        "shopping": 5.8
+      }
+    },
+
+    "shimla": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill Station",
+        "ideal_duration": "3-4 days",
+        "altitude_m": 2276,
+        "climate": "Subtropical Highland",
+        "avg_temperature": "10-25°C",
+        "peak_season": "April-June",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": true,
+        "famous_for": ["Toy Train", "Mall Road", "Christ Church", "Ridge", "Jakhoo Temple"],
+        "best_for": ["Family", "Honeymoon", "Winter Vacation"],
+        "special_attraction": "Kalka-Shimla Toy Train (UNESCO)",
+        "local_cuisine": ["Sidu", "Babru", "Chha Gosht", "Madra"],
+        "adventure_activities": ["Ice Skating", "Trekking", "Toy Train Ride", "Paragliding"],
+        "best_viewpoints": ["Jakhoo Hill", "Summer Hill", "Prospect Hill"],
+        "best_months": ["Apr", "May", "Jun", "Sep", "Oct"]
+      },
+      "costs": {
+        "hostel_per_night": 2300,
+        "food_per_person_per_day": 850,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Shimla Airport (23km)",
+        "nearest_railway": "Shimla Railway Station",
+        "direct_transport": [],
+        "hub_city": "kalka",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.8,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 8.7,
+        "things_to_do": 7.5,
+        "cleanliness": 7.0,
+        "family_friendly": 8.0,
+        "crowd_level": 7.0,
+        "safety": 8.0,
+        "tourist_trap_risk": 5.0,
+        "connectivity": 6.5,
+        "travel_time_from_major_city": 7.0,
+        "road_quality": 6.0,
+        "public_transport": 6.2,
+        "nightlife": 5.2,
+        "shopping": 6.5
+      }
+    },
+
+    "manali": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill Station",
+        "ideal_duration": "3-4 days",
+        "altitude_m": 2050,
+        "climate": "Cold Temperate",
+        "avg_temperature": "5-20°C",
+        "peak_season": "April-June & December-January",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Solang Valley", "Rohtang Pass", "Old Manali"],
+        "best_for": ["Adventure", "Couples"],
+        "special_attraction": "Solang Valley",
+        "local_cuisine": ["Siddu", "Thukpa"],
+        "adventure_activities": ["Paragliding", "Skiing", "River Rafting"],
+        "best_viewpoints": ["Solang Valley", "Rohtang Pass"],
+        "best_months": ["Apr", "May", "Jun", "Dec", "Jan"]
+      },
+      "costs": {
+        "hostel_per_night": 2400,
+        "food_per_person_per_day": 900,
+        "local_transport_per_day": 420
+      },
+      "logistics": {
+        "nearest_airport": "Bhuntar Airport",
+        "nearest_railway": "Chandigarh",
+        "direct_transport": [],
+        "hub_city": "chandigarh",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 6.8,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 9.0,
+        "things_to_do": 8.2,
+        "cleanliness": 7.2,
+        "family_friendly": 7.0,
+        "crowd_level": 7.5,
+        "safety": 8.0,
+        "tourist_trap_risk": 5.5,
+        "connectivity": 6.0,
+        "travel_time_from_major_city": 8.0,
+        "road_quality": 5.8,
+        "public_transport": 5.5,
+        "nightlife": 5.0,
+        "shopping": 5.8
+      }
+    },
+
+    "amritsar": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Cultural & Spiritual",
+        "ideal_duration": "2 days",
+        "altitude_m": 234,
+        "climate": "Hot Semi-Arid",
+        "avg_temperature": "5-40°C",
+        "peak_season": "October-March",
+        "off_season": "April-September",
+        "monsoon_rainfall": "Low",
+        "unesco_heritage": false,
+        "famous_for": ["Golden Temple", "Wagah Border"],
+        "best_for": ["Culture", "Spiritual", "History"],
+        "special_attraction": "Golden Temple",
+        "local_cuisine": ["Amritsari Kulcha", "Lassi"],
+        "adventure_activities": [],
+        "best_viewpoints": ["Golden Temple Complex"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 800,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Amritsar Airport",
+        "nearest_railway": "Amritsar Station",
+        "direct_transport": ["train", "flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.5,
+        "weather_comfort": 6.8,
+        "scenic_beauty": 6.5,
+        "things_to_do": 7.2,
+        "cleanliness": 7.0,
+        "family_friendly": 8.0,
+        "crowd_level": 6.5,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 8.0,
+        "travel_time_from_major_city": 6.5,
+        "road_quality": 7.2,
+        "public_transport": 7.0,
+        "nightlife": 4.5,
+        "shopping": 6.5
+      }
+    },
+
+    "jaipur": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Heritage City",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 431,
+        "climate": "Hot Semi-Arid",
+        "avg_temperature": "8-40°C",
+        "peak_season": "October-March",
+        "off_season": "April-September",
+        "monsoon_rainfall": "Low",
+        "unesco_heritage": true,
+        "famous_for": ["Amber Fort", "Hawa Mahal", "City Palace"],
+        "best_for": ["History", "Architecture", "Culture"],
+        "special_attraction": "Amber Fort",
+        "local_cuisine": ["Dal Baati Churma", "Ghewar"],
+        "adventure_activities": ["Hot Air Ballooning"],
+        "best_viewpoints": ["Nahargarh Fort"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 850,
+        "local_transport_per_day": 400
+      },
+      "logistics": {
+        "nearest_airport": "Jaipur Airport",
+        "nearest_railway": "Jaipur Junction",
+        "direct_transport": ["train", "flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 6.5,
+        "scenic_beauty": 7.5,
+        "things_to_do": 8.0,
+        "cleanliness": 7.2,
+        "family_friendly": 7.8,
+        "crowd_level": 7.0,
+        "safety": 8.2,
+        "tourist_trap_risk": 5.5,
+        "connectivity": 8.0,
+        "travel_time_from_major_city": 6.5,
+        "road_quality": 7.5,
+        "public_transport": 7.2,
+        "nightlife": 5.5,
+        "shopping": 7.5
+      }
+    },
+
+    "udaipur": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Heritage & Lake City",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 598,
+        "climate": "Hot Semi-Arid",
+        "avg_temperature": "10-38°C",
+        "peak_season": "October-March",
+        "off_season": "April-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Lake Pichola", "City Palace"],
+        "best_for": ["Couples", "Heritage"],
+        "special_attraction": "Lake Pichola Boat Ride",
+        "local_cuisine": ["Dal Baati", "Gatte ki Sabzi"],
+        "adventure_activities": ["Boat Ride"],
+        "best_viewpoints": ["Monsoon Palace"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 850,
+        "local_transport_per_day": 400
+      },
+      "logistics": {
+        "nearest_airport": "Udaipur Airport",
+        "nearest_railway": "Udaipur City",
+        "direct_transport": ["train", "flight"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 6.8,
+        "scenic_beauty": 8.0,
+        "things_to_do": 7.8,
+        "cleanliness": 7.5,
+        "family_friendly": 7.5,
+        "crowd_level": 6.5,
+        "safety": 8.3,
+        "tourist_trap_risk": 5.0,
+        "connectivity": 7.8,
+        "travel_time_from_major_city": 7.0,
+        "road_quality": 7.0,
+        "public_transport": 6.8,
+        "nightlife": 4.5,
+        "shopping": 6.8
+      }
+    },
+
+    "rishikesh": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Spiritual & Adventure",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 372,
+        "climate": "Humid Subtropical",
+        "avg_temperature": "15-35°C",
+        "peak_season": "September-November & February-May",
+        "off_season": "June-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Yoga", "River Rafting", "Ganga Aarti", "Laxman Jhula"],
+        "best_for": ["Adventure", "Spiritual", "Yoga", "Backpackers"],
+        "special_attraction": "Evening Ganga Aarti at Triveni Ghat",
+        "local_cuisine": ["Aloo Puri", "Kachori", "Jalebi", "Street Food"],
+        "adventure_activities": ["River Rafting", "Bungee Jumping", "Camping", "Trekking"],
+        "best_viewpoints": ["Laxman Jhula", "Ram Jhula", "Neer Garh Waterfall"],
+        "best_months": ["Feb", "Mar", "Apr", "Sep", "Oct", "Nov"]
+      },
+      "costs": {
+        "hostel_per_night": 2300,
+        "food_per_person_per_day": 300,
+        "local_transport_per_day": 300
+      },
+      "logistics": {
+        "nearest_airport": "Jolly Grant Airport (20km)",
+        "nearest_railway": "Haridwar (25km)",
+        "direct_transport": ["own_vehicle"],
+        "hub_city": "haridwar",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 8.8,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.2,
+        "things_to_do": 8.0,
+        "cleanliness": 6.8,
+        "family_friendly": 7.0,
+        "crowd_level": 6.5,
+        "safety": 8.2,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 7.5,
+        "travel_time_from_major_city": 5.5,
+        "road_quality": 7.0,
+        "public_transport": 7.2,
+        "nightlife": 5.5,
+        "shopping": 6.0
+      }
+    },
+
+    "haridwar": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Spiritual City",
+        "ideal_duration": "1-2 days",
+        "altitude_m": 314,
+        "climate": "Humid Subtropical",
+        "avg_temperature": "15-35°C",
+        "peak_season": "October-March",
+        "off_season": "June-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Ganga Aarti", "Har Ki Pauri"],
+        "best_for": ["Spiritual", "Family"],
+        "special_attraction": "Har Ki Pauri Ghat",
+        "local_cuisine": ["Kachori", "Aloo Puri"],
+        "adventure_activities": [],
+        "best_viewpoints": ["Har Ki Pauri"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 350,
+        "local_transport_per_day": 250
+      },
+      "logistics": {
+        "nearest_airport": "Jolly Grant Airport",
+        "nearest_railway": "Haridwar Station",
+        "direct_transport": ["train", "own_vehicle"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 8.5,
+        "weather_comfort": 7.5,
+        "scenic_beauty": 6.5,
+        "things_to_do": 6.0,
+        "cleanliness": 7.0,
+        "family_friendly": 8.0,
+        "crowd_level": 6.5,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 8.0,
+        "travel_time_from_major_city": 5.0,
+        "road_quality": 7.2,
+        "public_transport": 7.5,
+        "nightlife": 3.5,
+        "shopping": 5.5
+      }
+    },
+
+    "nainital": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 2084,
+        "climate": "Temperate",
+        "avg_temperature": "7-22°C",
+        "peak_season": "March-June",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Naini Lake", "Snow View Point"],
+        "best_for": ["Family", "Couples"],
+        "special_attraction": "Naini Lake",
+        "local_cuisine": ["Momos", "Maggi"],
+        "adventure_activities": ["Boating", "Trekking"],
+        "best_viewpoints": ["Snow View", "Tiffin Top"],
+        "best_months": ["Mar", "Apr", "May", "Jun"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Pantnagar Airport",
+        "nearest_railway": "Kathgodam",
+        "direct_transport": [],
+        "hub_city": "kathgodam",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 8.5,
+        "things_to_do": 7.0,
+        "cleanliness": 7.5,
+        "family_friendly": 7.8,
+        "crowd_level": 6.5,
+        "safety": 8.3,
+        "tourist_trap_risk": 5.0,
+        "connectivity": 6.5,
+        "travel_time_from_major_city": 7.0,
+        "road_quality": 6.5,
+        "public_transport": 5.8,
+        "nightlife": 4.0,
+        "shopping": 5.8
+      }
+    },
+
+    "mussoorie": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 2005,
+        "climate": "Temperate",
+        "avg_temperature": "6-22°C",
+        "peak_season": "March-June",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Mall Road", "Kempty Falls"],
+        "best_for": ["Family", "Couples"],
+        "special_attraction": "Kempty Falls",
+        "local_cuisine": ["Momos", "Chaat"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Lal Tibba", "Gun Hill"],
+        "best_months": ["Mar", "Apr", "May", "Jun"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Jolly Grant Airport",
+        "nearest_railway": "Dehradun",
+        "direct_transport": [],
+        "hub_city": "dehradun",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 8.3,
+        "things_to_do": 7.0,
+        "cleanliness": 7.2,
+        "family_friendly": 7.8,
+        "crowd_level": 6.8,
+        "safety": 8.2,
+        "tourist_trap_risk": 5.2,
+        "connectivity": 6.5,
+        "travel_time_from_major_city": 6.8,
+        "road_quality": 6.5,
+        "public_transport": 5.8,
+        "nightlife": 4.0,
+        "shopping": 5.8
+      }
+    },
+
+    "dharamshala": {
+      "meta": {
+        "region": "north",
+        "travel_type": "Hill & Spiritual",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1457,
+        "climate": "Temperate",
+        "avg_temperature": "8-25°C",
+        "peak_season": "March-June & September-November",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["McLeod Ganj", "Dalai Lama Temple"],
+        "best_for": ["Spiritual", "Solo", "Nature"],
+        "special_attraction": "Dalai Lama Temple",
+        "local_cuisine": ["Tibetan Momos", "Thukpa"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Triund"],
+        "best_months": ["Mar", "Apr", "May", "Sep", "Oct"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 650,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Kangra Airport",
+        "nearest_railway": "Pathankot",
+        "direct_transport": [],
+        "hub_city": "pathankot",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.5,
+        "things_to_do": 7.2,
+        "cleanliness": 7.5,
+        "family_friendly": 7.2,
+        "crowd_level": 5.8,
+        "safety": 8.3,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 6.2,
+        "travel_time_from_major_city": 7.8,
+        "road_quality": 6.0,
+        "public_transport": 5.5,
+        "nightlife": 3.5,
+        "shopping": 5.2
+      }
+    },
+
+    "ooty": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Hill Station",
+        "ideal_duration": "3 days",
+        "altitude_m": 2240,
+        "climate": "Temperate",
+        "avg_temperature": "5-22°C",
+        "peak_season": "March-June",
+        "off_season": "July-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Tea Gardens", "Botanical Garden", "Toy Train"],
+        "best_for": ["Family", "Couples"],
+        "special_attraction": "Nilgiri Toy Train",
+        "local_cuisine": ["South Indian Meals", "Homemade Chocolates"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Doddabetta Peak", "Ooty Lake"],
+        "best_months": ["Mar", "Apr", "May", "Jun"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 400
+      },
+      "logistics": {
+        "nearest_airport": "Coimbatore Airport",
+        "nearest_railway": "Mettupalayam",
+        "direct_transport": [],
+        "hub_city": "coimbatore",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 8.5,
+        "scenic_beauty": 9.0,
+        "things_to_do": 7.0,
+        "cleanliness": 7.5,
+        "family_friendly": 8.0,
+        "crowd_level": 6.5,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 6.0,
+        "travel_time_from_major_city": 7.0,
+        "road_quality": 6.5,
+        "public_transport": 5.5,
+        "nightlife": 4.0,
+        "shopping": 5.5
+      }
+    },
+
+    "kodaikanal": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 2133,
+        "climate": "Temperate",
+        "avg_temperature": "8-24°C",
+        "peak_season": "March-June",
+        "off_season": "July-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Kodaikanal Lake", "Pillar Rocks"],
+        "best_for": ["Couples", "Peace"],
+        "special_attraction": "Kodaikanal Lake",
+        "local_cuisine": ["South Indian Meals"],
+        "adventure_activities": ["Hiking"],
+        "best_viewpoints": ["Pillar Rocks", "Coaker’s Walk"],
+        "best_months": ["Mar", "Apr", "May", "Jun"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 680,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Madurai Airport",
+        "nearest_railway": "Kodai Road",
+        "direct_transport": [],
+        "hub_city": "madurai",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 8.2,
+        "scenic_beauty": 8.8,
+        "things_to_do": 6.8,
+        "cleanliness": 7.8,
+        "family_friendly": 7.5,
+        "crowd_level": 6.0,
+        "safety": 8.3,
+        "tourist_trap_risk": 4.2,
+        "connectivity": 6.0,
+        "travel_time_from_major_city": 7.2,
+        "road_quality": 6.5,
+        "public_transport": 5.5,
+        "nightlife": 3.8,
+        "shopping": 5.2
+      }
+    },
+
+    "coorg": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Hill & Coffee Estate",
+        "ideal_duration": "3 days",
+        "altitude_m": 1525,
+        "climate": "Tropical Highland",
+        "avg_temperature": "10-28°C",
+        "peak_season": "October-March",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Coffee Plantations", "Abbey Falls"],
+        "best_for": ["Nature", "Couples"],
+        "special_attraction": "Coffee Estate Stays",
+        "local_cuisine": ["Pandi Curry", "Akki Roti"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Raja Seat", "Mandalpatti"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2300,
+        "food_per_person_per_day": 750,
+        "local_transport_per_day": 420
+      },
+      "logistics": {
+        "nearest_airport": "Mangalore Airport",
+        "nearest_railway": "Mysuru",
+        "direct_transport": [],
+        "hub_city": "mysuru",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 6.8,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.8,
+        "things_to_do": 7.0,
+        "cleanliness": 7.5,
+        "family_friendly": 7.2,
+        "crowd_level": 5.5,
+        "safety": 8.2,
+        "tourist_trap_risk": 5.0,
+        "connectivity": 5.8,
+        "travel_time_from_major_city": 7.5,
+        "road_quality": 6.2,
+        "public_transport": 5.0,
+        "nightlife": 3.5,
+        "shopping": 5.0
+      }
+    },
+
+    "munnar": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1600,
+        "climate": "Tropical Highland",
+        "avg_temperature": "10-25°C",
+        "peak_season": "October-March",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Tea Gardens", "Eravikulam Park"],
+        "best_for": ["Nature", "Couples"],
+        "special_attraction": "Neelakurinji Blooms",
+        "local_cuisine": ["Kerala Meals", "Appam"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Top Station", "Echo Point"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 400
+      },
+      "logistics": {
+        "nearest_airport": "Cochin Airport",
+        "nearest_railway": "Aluva",
+        "direct_transport": [],
+        "hub_city": "kochi",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 9.0,
+        "things_to_do": 7.2,
+        "cleanliness": 7.8,
+        "family_friendly": 7.5,
+        "crowd_level": 6.0,
+        "safety": 8.3,
+        "tourist_trap_risk": 4.8,
+        "connectivity": 6.0,
+        "travel_time_from_major_city": 7.5,
+        "road_quality": 6.2,
+        "public_transport": 5.2,
+        "nightlife": 3.5,
+        "shopping": 5.0
+      }
+    },
+
+    "kanyakumari": {
+      "meta": {
+        "region": "south",
+        "travel_type": "Coastal & Pilgrimage",
+        "ideal_duration": "1-2 days",
+        "altitude_m": 30,
+        "climate": "Tropical",
+        "avg_temperature": "22-34°C",
+        "peak_season": "October-February",
+        "off_season": "March-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Vivekananda Rock", "Sunrise Point"],
+        "best_for": ["Spiritual", "Solo"],
+        "special_attraction": "Vivekananda Rock Memorial",
+        "local_cuisine": ["South Indian Meals", "Seafood"],
+        "adventure_activities": ["Boat Ride"],
+        "best_viewpoints": ["Sunrise Point", "Vivekananda Rock"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 1800,
+        "food_per_person_per_day": 600,
+        "local_transport_per_day": 300
+      },
+      "logistics": {
+        "nearest_airport": "Trivandrum Airport",
+        "nearest_railway": "Kanyakumari Station",
+        "direct_transport": ["train"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.8,
+        "weather_comfort": 7.2,
+        "scenic_beauty": 7.5,
+        "things_to_do": 6.5,
+        "cleanliness": 7.0,
+        "family_friendly": 7.2,
+        "crowd_level": 6.0,
+        "safety": 8.0,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 7.5,
+        "travel_time_from_major_city": 7.0,
+        "road_quality": 6.8,
+        "public_transport": 6.5,
+        "nightlife": 3.0,
+        "shopping": 5.5
+      }
+    },
+
+    "lonavala": {
+      "meta": {
+        "region": "west",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2 days",
+        "altitude_m": 624,
+        "climate": "Tropical Monsoon",
+        "avg_temperature": "15-30°C",
+        "peak_season": "October-February",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Tiger Point", "Bhushi Dam", "Rajmachi Fort"],
+        "best_for": ["Weekend Trip", "Couples"],
+        "special_attraction": "Bhushi Dam",
+        "local_cuisine": ["Chikki", "Vada Pav"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Tiger Point", "Lion Point"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan"]
+      },
+      "costs": {
+        "hostel_per_night": 1900,
+        "food_per_person_per_day": 650,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Pune Airport",
+        "nearest_railway": "Lonavala Station",
+        "direct_transport": ["train", "own_vehicle"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 7.5,
+        "scenic_beauty": 7.8,
+        "things_to_do": 6.8,
+        "cleanliness": 7.0,
+        "family_friendly": 7.0,
+        "crowd_level": 6.5,
+        "safety": 8.2,
+        "tourist_trap_risk": 5.5,
+        "connectivity": 7.5,
+        "travel_time_from_major_city": 5.0,
+        "road_quality": 7.2,
+        "public_transport": 6.8,
+        "nightlife": 4.0,
+        "shopping": 5.5
+      }
+    },
+
+    "matheran": {
+      "meta": {
+        "region": "west",
+        "travel_type": "Hill Station",
+        "ideal_duration": "1-2 days",
+        "altitude_m": 800,
+        "climate": "Tropical",
+        "avg_temperature": "15-30°C",
+        "peak_season": "October-February",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Echo Point", "Toy Train", "No Vehicles Zone"],
+        "best_for": ["Peace", "Couples"],
+        "special_attraction": "Vehicle-free Hill Station",
+        "local_cuisine": ["Chikki", "Vada Pav"],
+        "adventure_activities": ["Hiking"],
+        "best_viewpoints": ["Echo Point", "Panorama Point"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan"]
+      },
+      "costs": {
+        "hostel_per_night": 1800,
+        "food_per_person_per_day": 600,
+        "local_transport_per_day": 300
+      },
+      "logistics": {
+        "nearest_airport": "Mumbai Airport",
+        "nearest_railway": "Neral",
+        "direct_transport": ["train", "own_vehicle"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.5,
+        "weather_comfort": 7.2,
+        "scenic_beauty": 7.5,
+        "things_to_do": 6.2,
+        "cleanliness": 8.0,
+        "family_friendly": 7.2,
+        "crowd_level": 5.5,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 6.8,
+        "travel_time_from_major_city": 5.2,
+        "road_quality": 6.5,
+        "public_transport": 6.2,
+        "nightlife": 3.0,
+        "shopping": 4.8
+      }
+    },
+
+    "mount-abu": {
+      "meta": {
+        "region": "west",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1220,
+        "climate": "Subtropical Highland",
+        "avg_temperature": "10-28°C",
+        "peak_season": "October-March",
+        "off_season": "April-June",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Nakki Lake", "Dilwara Temples"],
+        "best_for": ["Family", "Pilgrimage"],
+        "special_attraction": "Dilwara Jain Temples",
+        "local_cuisine": ["Dal Baati Churma"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Guru Shikhar", "Sunset Point"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 400
+      },
+      "logistics": {
+        "nearest_airport": "Udaipur Airport",
+        "nearest_railway": "Abu Road",
+        "direct_transport": ["train", "own_vehicle"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 7.8,
+        "things_to_do": 6.5,
+        "cleanliness": 7.5,
+        "family_friendly": 8.0,
+        "crowd_level": 6.0,
+        "safety": 8.0,
+        "tourist_trap_risk": 4.8,
+        "connectivity": 6.5,
+        "travel_time_from_major_city": 7.5,
+        "road_quality": 6.8,
+        "public_transport": 6.0,
+        "nightlife": 3.5,
+        "shopping": 5.5
+      }
+    },
+
+    "mahabaleshwar": {
+      "meta": {
+        "region": "west",
+        "travel_type": "Hill Station",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1353,
+        "climate": "Tropical Highland",
+        "avg_temperature": "10-25°C",
+        "peak_season": "October-February",
+        "off_season": "June-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Strawberry Farms", "Arthur Seat"],
+        "best_for": ["Family", "Couples"],
+        "special_attraction": "Strawberry Farms",
+        "local_cuisine": ["Strawberries with Cream", "Corn Pattice"],
+        "adventure_activities": ["Hiking"],
+        "best_viewpoints": ["Arthur Seat", "Wilson Point"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 650,
+        "local_transport_per_day": 380
+      },
+      "logistics": {
+        "nearest_airport": "Pune Airport",
+        "nearest_railway": "Satara",
+        "direct_transport": ["own_vehicle"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.3,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.0,
+        "things_to_do": 6.8,
+        "cleanliness": 7.2,
+        "family_friendly": 7.5,
+        "crowd_level": 6.5,
+        "safety": 8.3,
+        "tourist_trap_risk": 5.2,
+        "connectivity": 6.0,
+        "travel_time_from_major_city": 6.0,
+        "road_quality": 7.0,
+        "public_transport": 5.5,
+        "nightlife": 3.5,
+        "shopping": 5.8
+      }
+    },
+
+    "kalimpong": {
+      "meta": {
+        "region": "east",
+        "travel_type": "Hill Town",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 1250,
+        "climate": "Temperate",
+        "avg_temperature": "8-25°C",
+        "peak_season": "March-June & October-November",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Flower Nurseries", "Durpin Monastery"],
+        "best_for": ["Peace", "Nature"],
+        "special_attraction": "Durpin Monastery",
+        "local_cuisine": ["Momos", "Thukpa"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Durpin Hill", "Deolo Hill"],
+        "best_months": ["Mar", "Apr", "May", "Oct", "Nov"]
+      },
+      "costs": {
+        "hostel_per_night": 1900,
+        "food_per_person_per_day": 600,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Bagdogra Airport",
+        "nearest_railway": "New Jalpaiguri",
+        "direct_transport": ["own_vehicle"],
+        "hub_city": null,
+        "hub_transport": null
+      },
+      "scores": {
+        "budget_friendly": 7.4,
+        "weather_comfort": 7.6,
+        "scenic_beauty": 8.3,
+        "things_to_do": 6.5,
+        "cleanliness": 8.0,
+        "family_friendly": 7.2,
+        "crowd_level": 5.5,
+        "safety": 8.4,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 5.8,
+        "travel_time_from_major_city": 7.5,
+        "road_quality": 6.0,
+        "public_transport": 5.2,
+        "nightlife": 3.0,
+        "shopping": 5.0
+      }
+    },
+
+    "gangtok": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "Hill Station",
+        "ideal_duration": "3-4 days",
+        "altitude_m": 1650,
+        "climate": "Temperate",
+        "avg_temperature": "5-22°C",
+        "peak_season": "March-June & September-November",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": false,
+        "famous_for": ["Tsomgo Lake", "MG Marg", "Rumtek Monastery"],
+        "best_for": ["Nature", "Couples", "Photography"],
+        "special_attraction": "Tsomgo Lake",
+        "local_cuisine": ["Thukpa", "Momos", "Gundruk"],
+        "adventure_activities": ["Trekking", "Cable Car Ride"],
+        "best_viewpoints": ["Tsomgo Lake", "Hanuman Tok"],
+        "best_months": ["Mar", "Apr", "May", "Oct", "Nov"]
+      },
+      "costs": {
+        "hostel_per_night": 2200,
+        "food_per_person_per_day": 700,
+        "local_transport_per_day": 450
+      },
+      "logistics": {
+        "nearest_airport": "Pakyong Airport",
+        "nearest_railway": "New Jalpaiguri",
+        "direct_transport": [],
+        "hub_city": "siliguri",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.0,
+        "weather_comfort": 8.0,
+        "scenic_beauty": 9.0,
+        "things_to_do": 7.5,
+        "cleanliness": 8.5,
+        "family_friendly": 7.5,
+        "crowd_level": 6.0,
+        "safety": 8.5,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 6.0,
+        "travel_time_from_major_city": 8.0,
+        "road_quality": 6.0,
+        "public_transport": 5.5,
+        "nightlife": 4.5,
+        "shopping": 6.0
+      }
+    },
+
+    "darjeeling": {
+      "meta": {
+        "region": "east",
+        "travel_type": "Hill Station",
+        "ideal_duration": "3-4 days",
+        "altitude_m": 2042,
+        "climate": "Temperate",
+        "avg_temperature": "6-20°C",
+        "peak_season": "March-May & October-November",
+        "off_season": "July-August",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": true,
+        "famous_for": ["Toy Train", "Tea Gardens", "Tiger Hill"],
+        "best_for": ["Family", "Nature", "Photography"],
+        "special_attraction": "Darjeeling Himalayan Railway",
+        "local_cuisine": ["Momos", "Thukpa", "Tea"],
+        "adventure_activities": ["Trekking"],
+        "best_viewpoints": ["Tiger Hill", "Batasia Loop"],
+        "best_months": ["Mar", "Apr", "May", "Oct", "Nov"]
+      },
+      "costs": {
+        "hostel_per_night": 2100,
+        "food_per_person_per_day": 650,
+        "local_transport_per_day": 420
+      },
+      "logistics": {
+        "nearest_airport": "Bagdogra Airport",
+        "nearest_railway": "New Jalpaiguri",
+        "direct_transport": [],
+        "hub_city": "siliguri",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.2,
+        "weather_comfort": 7.8,
+        "scenic_beauty": 8.8,
+        "things_to_do": 7.0,
+        "cleanliness": 7.8,
+        "family_friendly": 7.5,
+        "crowd_level": 6.5,
+        "safety": 8.2,
+        "tourist_trap_risk": 4.5,
+        "connectivity": 6.2,
+        "travel_time_from_major_city": 7.8,
+        "road_quality": 6.2,
+        "public_transport": 5.8,
+        "nightlife": 4.0,
+        "shopping": 6.5
+      }
+    },
+
+    "shillong": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "Hill City",
+        "ideal_duration": "3 days",
+        "altitude_m": 1525,
+        "climate": "Subtropical Highland",
+        "avg_temperature": "10-25°C",
+        "peak_season": "October-April",
+        "off_season": "May-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Umiam Lake", "Elephant Falls", "Music Scene"],
+        "best_for": ["Nature", "Youth", "Culture"],
+        "special_attraction": "Umiam Lake",
+        "local_cuisine": ["Jadoh", "Tungrymbai"],
+        "adventure_activities": ["Boating", "Trekking"],
+        "best_viewpoints": ["Shillong Peak", "Umiam Lake"],
+        "best_months": ["Oct", "Nov", "Mar", "Apr"]
+      },
+      "costs": {
+        "hostel_per_night": 2000,
+        "food_per_person_per_day": 650,
+        "local_transport_per_day": 400
+      },
+      "logistics": {
+        "nearest_airport": "Shillong Airport",
+        "nearest_railway": "Guwahati",
+        "direct_transport": ["own_vehicle"],
+        "hub_city": "guwahati",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.4,
+        "weather_comfort": 7.6,
+        "scenic_beauty": 8.4,
+        "things_to_do": 7.2,
+        "cleanliness": 8.0,
+        "family_friendly": 7.0,
+        "crowd_level": 6.0,
+        "safety": 8.5,
+        "tourist_trap_risk": 3.8,
+        "connectivity": 6.5,
+        "travel_time_from_major_city": 7.5,
+        "road_quality": 6.5,
+        "public_transport": 5.8,
+        "nightlife": 5.5,
+        "shopping": 5.8
+      }
+    },
+
+    "imphal": {
+      "meta": {
+        "region": "northeast",
+        "travel_type": "Cultural City",
+        "ideal_duration": "2-3 days",
+        "altitude_m": 786,
+        "climate": "Humid Subtropical",
+        "avg_temperature": "12-30°C",
+        "peak_season": "October-March",
+        "off_season": "April-September",
+        "monsoon_rainfall": "Heavy",
+        "unesco_heritage": false,
+        "famous_for": ["Loktak Lake", "Ima Market"],
+        "best_for": ["Culture", "History"],
+        "special_attraction": "Loktak Floating Lake",
+        "local_cuisine": ["Eromba", "Chamthong"],
+        "adventure_activities": ["Cycling"],
+        "best_viewpoints": ["Loktak Lake"],
+        "best_months": ["Oct", "Nov", "Dec", "Jan"]
+      },
+      "costs": {
+        "hostel_per_night": 1700,
+        "food_per_person_per_day": 550,
+        "local_transport_per_day": 350
+      },
+      "logistics": {
+        "nearest_airport": "Imphal Airport",
+        "nearest_railway": "Dimapur",
+        "direct_transport": ["flight"],
+        "hub_city": "dimapur",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 8.0,
+        "weather_comfort": 7.2,
+        "scenic_beauty": 7.8,
+        "things_to_do": 6.5,
+        "cleanliness": 7.8,
+        "family_friendly": 7.0,
+        "crowd_level": 4.5,
+        "safety": 8.2,
+        "tourist_trap_risk": 3.0,
+        "connectivity": 5.5,
+        "travel_time_from_major_city": 8.0,
+        "road_quality": 5.8,
+        "public_transport": 5.2,
+        "nightlife": 3.5,
+        "shopping": 5.0
+      }
+    },
+
+    "konark": {
+      "meta": {
+        "region": "east",
+        "travel_type": "Heritage & Beach",
+        "ideal_duration": "1-2 days",
+        "altitude_m": 5,
+        "climate": "Tropical",
+        "avg_temperature": "20-35°C",
+        "peak_season": "October-February",
+        "off_season": "March-September",
+        "monsoon_rainfall": "Moderate",
+        "unesco_heritage": true,
+        "famous_for": ["Sun Temple", "Chandrabhaga Beach"],
+        "best_for": ["History", "Architecture"],
+        "special_attraction": "Konark Sun Temple",
+        "local_cuisine": ["Dalma", "Chuda Mix"],
+        "adventure_activities": ["Beach Walk"],
+        "best_viewpoints": ["Sun Temple Complex"],
+        "best_months": ["Nov", "Dec", "Jan", "Feb"]
+      },
+      "costs": {
+        "hostel_per_night": 1800,
+        "food_per_person_per_day": 600,
+        "local_transport_per_day": 300
+      },
+      "logistics": {
+        "nearest_airport": "Bhubaneswar Airport",
+        "nearest_railway": "Puri",
+        "direct_transport": [],
+        "hub_city": "puri",
+        "hub_transport": ["bus", "own_vehicle"]
+      },
+      "scores": {
+        "budget_friendly": 7.8,
+        "weather_comfort": 7.0,
+        "scenic_beauty": 7.5,
+        "things_to_do": 6.5,
+        "cleanliness": 7.2,
+        "family_friendly": 7.5,
+        "crowd_level": 5.5,
+        "safety": 8.0,
+        "tourist_trap_risk": 4.0,
+        "connectivity": 6.5,
+        "travel_time_from_major_city": 7.0,
+        "road_quality": 6.5,
+        "public_transport": 6.0,
+        "nightlife": 3.0,
+        "shopping": 5.5
+      }
+    },
+    
+    "bus_prices": {
+  "coimbatore-ooty": 450,
+  "madurai-kodaikanal": 320,
+  "mysuru-coorg": 380,
+  "kochi-munnar": 420,
+   "haridwar-rishikesh": 150,
+  "kathgodam-nainital": 320,
+  "dehradun-mussoorie": 220,
+  "pathankot-dharamshala": 380,
+  "kalka-shimla": 180,
+  "chandigarh-manali": 650,
+  "hospet-hampi": 180,
+  "karwar-gokarna": 220,
+  "mangalore-chikmagalur": 350,
+  "kozhikode-wayanad": 420,
+ "visakhapatnam-araku-valley": 350,
+   "kathgodam-ranikhet": 300,
+  "kotdwar-lansdowne": 250,
+  "bhuntar-kasol": 180,
+  "pathankot-dalhousie": 300,
+  "kalka-kasauli": 180,
+  "kathgodam-almora": 320,
+  "bhuntar-kullu": 150,
+  "itanagar-ziro": 300,
+  "gangtok-lachen": 750,
+  "gangtok-pelling": 280,
+  "pune-panchgani": 200,
+  "mumbai-alibaug": 250,
+  "shillong-mawlynnong": 120,
+  "shillong-cherrapunji": 180,
+  "jorhat-majuli": 220,
+  "gangtok-lachung": 500,
+  "siliguri-gangtok": 300,
+  "siliguri-darjeeling": 180,
+  "guwahati-shillong": 350,
+  "dimapur-imphal": 450,
+  "puri-konark": 150
+
+    }
+
+  }
+}

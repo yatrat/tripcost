@@ -1,6 +1,6 @@
 let data = null;
 
-const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v4.6/trip-data.json";
+const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v4.7/trip-data.json";
 
 fetch(DATA_URL)
   .then(r => r.json())
@@ -27,17 +27,11 @@ const shareBtn = document.getElementById("copyCompareLink");
 
 calcBtn.onclick = calculate;
 
-/* ---------- TRANSPORT LOGIC ---------- */
+/* ---------- TRANSPORT ---------- */
 
 directTransport.onchange = () => {
   directMsg.innerHTML = transportMessage(directTransport.value);
-
-  if (directTransport.value === "own_vehicle") {
-    hubSection.style.display = "none";
-    hubTransport.value = "";
-  } else {
-    showHubIfApplicable();
-  }
+  showHubIfApplicable();
 };
 
 hubTransport.onchange = () => {
@@ -51,7 +45,6 @@ function transportMessage(type) {
   if (type === "train" || type === "flight") {
     return `⚠️ Main transport not included — please check official price.`;
   }
- 
   return "";
 }
 
@@ -78,28 +71,17 @@ function initAutocomplete(list) {
   });
 }
 
-/* ---------- CORE LOGIC ---------- */
+/* ---------- CORE ---------- */
 
 function calculate() {
   if (!data) return alert("Data still loading...");
 
   const destKey = destInput.value.toLowerCase().replace(/\s+/g, "-");
-  const start = startCity.value.toLowerCase();
+  const start = startCity.value.toLowerCase().replace(/\s+/g, "-");
   const days = +daysInput.value;
   const people = +peopleInput.value;
 
   if (!data.cities[destKey]) return alert("Select valid destination");
-
-  // Illogical combos
-  if (directTransport.value === "own_vehicle" && hubTransport.value) {
-    alert("If you use own vehicle directly, hub transport is not applicable.");
-    return;
-  }
-
-  if ((directTransport.value === "flight" || directTransport.value === "train") && hubTransport.value === "own_vehicle") {
-    alert("You cannot fly/train and then use your own vehicle at the hub.");
-    return;
-  }
 
   renderResult(destKey, start, days, people);
 }
@@ -113,47 +95,43 @@ function renderResult(dest, start, days, people) {
     (c.food_per_person_per_day * days * people) +
     (c.local_transport_per_day * days);
 
-let busApplied = false;
-let busPrice = null;
-let busFrom = null;
+  let busApplied = false;
+  let busPrice = null;
+  let busFrom = null;
 
-if (city.logistics.hub_city) {
-  const hub = city.logistics.hub_city;
-  const startNorm = start.replace(/\s+/g, "-");
+  if (city.logistics.hub_city) {
+    const hub = city.logistics.hub_city;
+    const price = data.bus_prices[`${hub}-${dest}`] || data.bus_prices[`${dest}-${hub}`];
 
-  const price = data.bus_prices[`${hub}-${dest}`] || data.bus_prices[`${dest}-${hub}`];
-
-  if (price) {
-    if (startNorm === hub) {
-      busApplied = true;
-      busPrice = price;
-      busFrom = hub;
-    } else if (hubTransport.value === "bus") {
+    if (price && (start === hub || hubTransport.value === "bus")) {
       busApplied = true;
       busPrice = price;
       busFrom = hub;
     }
   }
-}
 
-if (busApplied) {
-  total += busPrice * people;
-}
+  if (busApplied) total += busPrice * people;
 
+  let html = `<div class="main-result">
+    <h3>${dest.replace(/-/g," ")}</h3>
+    <p>🏨 Stay: ₹${c.hostel_per_night} per night</p>
+    <p>🍽 Food: ₹${c.food_per_person_per_day} per person / day</p>
+    <p>🚌 Local transport: ₹${c.local_transport_per_day} per day</p>`;
 
-  let html = `<h3>${dest.replace(/-/g," ")}</h3>`;
-  html += `<p>🏨 Stay: ₹${c.hostel_per_night} per night</p>`;
-  html += `<p>🍽 Food: ₹${c.food_per_person_per_day} per person / day</p>`;
-  html += `<p>🚌 Local transport: ₹${c.local_transport_per_day} per day</p>`;
-
-if (busApplied) {
-  html += `<p>🚌 Bus from ${busFrom}: ₹${busPrice} per person</p>`;
-}
-
+  if (busApplied) {
+    html += `<p>🚌 Bus from ${busFrom}: ₹${busPrice} per person</p>`;
+  }
 
   html += `<hr><p><strong>Estimate for ${people} people, ${days} days:</strong> ₹${total}</p>`;
-  html += `<button onclick="toggleDetails()">Load more</button>`;
-  html += `<div id="details" style="display:none;margin-top:10px;">${renderDetails(city)}</div>`;
+  html += `</div>`;
+
+  html += `<div class="load-more-wrapper">
+    <button id="loadMoreBtn" onclick="toggleDetails()">Load more</button>
+  </div>`;
+
+  html += `<div id="details" class="details-section" style="display:none;">
+    ${renderDetails(city)}
+  </div>`;
 
   result.innerHTML = html;
   result.style.display = "block";
@@ -165,12 +143,25 @@ if (busApplied) {
 function renderDetails(city) {
   return `
     <h4>About</h4>
-    ${pick(city.meta, ["region","climate","best_for","famous_for","best_months","best_viewpoints","travel_type","off_season","peak_season","monsoon_rainfall","special_attraction",])}
+    ${pick(city.meta, ["region","climate","best_for","famous_for","best_months","best_viewpoints","travel_type","off_season","peak_season","monsoon_rainfall","special_attraction"])}
     <h4>Logistics</h4>
     ${pick(city.logistics, ["nearest_airport","nearest_railway"])}
     <h4>Scores</h4>
-    ${renderObject(city.scores)}
+    ${renderScores(city.scores)}
+    <div class="itinerary-link-box">
+      <a href="/p/itinerary-planner.html" class="itinerary-link">
+        🗺️ Create day-wise itinerary for this trip
+      </a>
+    </div>
   `;
+}
+
+function renderScores(scores) {
+  let h = "";
+  for (let k in scores) {
+    h += `<p><b>${k.replace(/_/g," ")}:</b> ${scores[k]} / 10</p>`;
+  }
+  return h;
 }
 
 function toggleDetails() {
@@ -189,33 +180,29 @@ function pick(obj, keys) {
   return h;
 }
 
-function renderObject(obj) {
-  let h = "";
-  for (let k in obj) {
-    h += `<p><b>${k.replace(/_/g," ")}:</b> ${obj[k]}</p>`;
-  }
-  return h;
-}
-
-/* ---------- HUB DISPLAY ---------- */
+/* ---------- HUB ---------- */
 
 function onDestinationSelected(destKey) {
-  const city = data.cities[destKey];
-
-  if (city.logistics.hub_city && directTransport.value !== "own_vehicle") {
-    hubSection.style.display = "block";
-    hubCity.value = city.logistics.hub_city;
-  } else {
-    hubSection.style.display = "none";
-    hubCity.value = "";
-    hubTransport.value = "";
-  }
+  showHubIfApplicable();
 }
 
 function showHubIfApplicable() {
   const destKey = destInput.value.toLowerCase().replace(/\s+/g,"-");
+  const start = startCity.value.toLowerCase().replace(/\s+/g,"-");
+
   if (data && data.cities[destKey] && data.cities[destKey].logistics.hub_city) {
-    hubSection.style.display = "block";
-    hubCity.value = data.cities[destKey].logistics.hub_city;
+    const hub = data.cities[destKey].logistics.hub_city;
+
+    if (start === hub) {
+      hubSection.style.display = "none";
+      hubTransport.value = "";
+    } else {
+      hubSection.style.display = "block";
+      hubCity.value = hub;
+    }
+  } else {
+    hubSection.style.display = "none";
+    hubCity.value = "";
+    hubTransport.value = "";
   }
 }

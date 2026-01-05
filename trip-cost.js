@@ -1,3 +1,12 @@
+/* ---- helper -----*/
+function makeRange(value, percent = 10) {
+  const delta = Math.round(value * percent / 100);
+  const min = Math.max(0, value - delta);
+  const max = value + delta;
+  return [min, max];
+}
+
+
 /* ---------- NORMALIZE URL ---------- */
 
 function normalizeCityParam() {
@@ -19,7 +28,7 @@ normalizeCityParam();
 /* ---------- DATA ---------- */
 
 let data = null;
-const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v4.9/trip-data.json";
+const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v5/trip-data.json";
 
 fetch(DATA_URL)
   .then(r => r.json())
@@ -101,7 +110,7 @@ function calculate() {
   if (!data) return alert("Data still loading...");
 
   const destKey = destInput.value.toLowerCase().replace(/\s+/g, "-");
-  const start = startCity.value.toLowerCase().replace(/\s+/g, "-");
+const start = startCity.value.trim().toLowerCase().replace(/\s+/g,"-");
   const days = +daysInput.value;
   const people = +peopleInput.value;
 
@@ -112,15 +121,20 @@ function calculate() {
 
 function renderResult(dest, start, days, people) {
   const city = data.cities[dest];
+  if (!city.costs) {
+    result.innerHTML = "<p>Cost data not available for this destination.</p>";
+    result.style.display = "block";
+    return;
+  }
   const c = city.costs;
 
-  let total =
-    (c.hostel_per_night * days) +
-    (c.food_per_person_per_day * days * people) +
-    (c.local_transport_per_day * days);
+
+  const [stayMin, stayMax] = makeRange(c.hostel_per_night * days);
+  const [foodMin, foodMax] = makeRange(c.food_per_person_per_day * days * people);
+  const [localMin, localMax] = makeRange(c.local_transport_per_day * days);
 
   let busApplied = false;
-  let busPrice = null;
+  let busPrice = 0;
   let busFrom = null;
 
   if (city.logistics.hub_city) {
@@ -129,24 +143,39 @@ function renderResult(dest, start, days, people) {
 
     if (price && (start === hub || hubTransport.value === "bus")) {
       busApplied = true;
-      busPrice = price;
+      busPrice = price * people;
       busFrom = hub;
     }
   }
 
-  if (busApplied) total += busPrice * people;
+  const [busMin, busMax] = busApplied ? makeRange(busPrice) : [0, 0];
+
+  const totalMin = stayMin + foodMin + localMin + busMin;
+  const totalMax = stayMax + foodMax + localMax + busMax;
 
   let html = `<div class="main-result">
     <h3>${dest.replace(/-/g," ")}</h3>
-    <p>🏨 Stay: ₹${c.hostel_per_night} per night</p>
-    <p>🍽 Food: ₹${c.food_per_person_per_day} per person / day</p>
-    <p>🚌 Local transport: ₹${c.local_transport_per_day} per day</p>`;
+    <p>🏨 Stay: ₹${stayMin} – ₹${stayMax}</p>
+    <p>🍽 Food: ₹${foodMin} – ₹${foodMax}</p>
+    <p>🚌 Local transport: ₹${localMin} – ₹${localMax}</p>`;
 
-  if (busApplied) html += `<p>🚌 Bus from ${busFrom}: ₹${busPrice} per person</p>`;
+  if (busApplied) {
+    html += `<p>🚌 Bus from ${busFrom}: ₹${busMin} – ₹${busMax}</p>`;
+  }
 
-  html += `<hr><p><strong>Estimate for ${people} people, ${days} days:</strong> ₹${total}</p></div>`;
-  html += `<div class="load-more-wrapper"><button onclick="toggleDetails()">Load more</button></div>`;
-  html += `<div id="details" class="details-section" style="display:none;">${renderDetails(city)}</div>`;
+  html += `<hr>
+    <p><strong>Estimate for ${people} people, ${days} days:</strong> ₹${totalMin} – ₹${totalMax}</p>
+    <p class="disclaimer">* All prices are approximate and may vary based on season, availability, and booking time.</p>
+  </div>`;
+
+  html += `<div class="load-more-wrapper">
+    <button onclick="toggleDetails()">Load more</button>
+  </div>`;
+
+  html += `<div id="details" class="details-section" style="display:none;">
+    ${renderDetails(city)}
+    <p class="disclaimer">* Destination information is indicative only and may change without notice.</p>
+  </div>`;
 
   result.innerHTML = html;
   result.style.display = "block";
@@ -196,7 +225,8 @@ function onDestinationSelected() { showHubIfApplicable(); }
 
 function showHubIfApplicable() {
   const destKey = destInput.value.toLowerCase().replace(/\s+/g,"-");
-  const start = startCity.value.toLowerCase().replace(/\s+/g,"-");
+const start = startCity.value.toLowerCase().replace(/\s+/g,"-");
+
 
   if (data && data.cities[destKey]?.logistics?.hub_city) {
     const hub = data.cities[destKey].logistics.hub_city;
@@ -230,6 +260,8 @@ function setupShareButton() {
   }
 
   shareBtn.onclick = async () => {
+  if (!destInput.value.trim()) return;
+
     try {
       await navigator.clipboard.writeText(buildShareURL());
       status.textContent = "Link copied!";

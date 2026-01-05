@@ -1,6 +1,7 @@
+<script>
 let data = null;
 
-const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tripcost@v4.1/trip-data.json";
+const DATA_URL = "https://cdn.jsdelivr.net/gh/yatrat/tricost@v4.2/trip-data.json";
 
 fetch(DATA_URL)
   .then(r => r.json())
@@ -9,40 +10,33 @@ fetch(DATA_URL)
     initAutocomplete(Object.keys(data.cities));
   });
 
-const startCity = document.getElementById("startCity");
 const destInput = document.getElementById("destInput");
 const destSug = document.getElementById("destSug");
 const daysInput = document.getElementById("daysInput");
 const peopleInput = document.getElementById("peopleInput");
-const result = document.getElementById("result");
-const calcBtn = document.getElementById("calcBtn");
-const shareBtn = document.getElementById("copyCompareLink");
-
 const directTransport = document.getElementById("directTransport");
 const hubTransport = document.getElementById("hubTransport");
 const hubSection = document.getElementById("hubSection");
 const hubCity = document.getElementById("hubCity");
+const result = document.getElementById("result");
+const calcBtn = document.getElementById("calcBtn");
+const shareBtn = document.getElementById("copyCompareLink");
 
 calcBtn.onclick = calculate;
 shareBtn.onclick = copyResult;
 
-function makeRange(value, percent = 10) {
-  const d = Math.round(value * percent / 100);
-  return [value - d, value + d];
-}
-
 function initAutocomplete(list) {
   destInput.addEventListener("input", () => {
-    const q = destInput.value.toLowerCase().replace(/\s+/g, "-");
+    const q = destInput.value.toLowerCase().replace(/\s+/g,"-");
     destSug.innerHTML = "";
-    if (!q) return destSug.style.display = "none";
+    if (!q) return destSug.style.display="none";
 
-    list.filter(c => c.startsWith(q)).slice(0, 8).forEach(c => {
+    list.filter(c => c.startsWith(q)).slice(0,8).forEach(c=>{
       const d = document.createElement("div");
-      d.textContent = c.replace(/-/g, " ");
-      d.onclick = () => {
+      d.textContent = c.replace(/-/g," ");
+      d.onclick = ()=> {
         destInput.value = d.textContent;
-        destSug.style.display = "none";
+        destSug.style.display="none";
         onDestinationSelected(c);
       };
       destSug.appendChild(d);
@@ -53,9 +47,7 @@ function initAutocomplete(list) {
 }
 
 function calculate() {
-  if (!data) return alert("Data loading...");
-
-  const destKey = destInput.value.toLowerCase().replace(/\s+/g, "-");
+  const destKey = destInput.value.toLowerCase().replace(/\s+/g,"-");
   const days = +daysInput.value;
   const people = +peopleInput.value;
 
@@ -68,15 +60,14 @@ function renderResult(dest, days, people) {
   const city = data.cities[dest];
   const c = city.costs;
 
-  const [hotelMin, hotelMax] = makeRange(c.hostel_per_night * days);
-  const [foodMin, foodMax] = makeRange(c.food_per_person_per_day * days * people);
+  let hotel = c.hostel_per_night * days;
+  let food = c.food_per_person_per_day * days * people;
 
-  let minTotal = hotelMin + foodMin;
-  let maxTotal = hotelMax + foodMax;
+  let total = hotel + food;
 
   let html = `<h3>${dest.replace(/-/g," ")}</h3>`;
-  html += `<p>🏨 Hotel: ₹${hotelMin}–₹${hotelMax}</p>`;
-  html += `<p>🍽 Food: ₹${foodMin}–₹${foodMax}</p>`;
+  html += `<p>🏨 Hotel: ₹${hotel}</p>`;
+  html += `<p>🍽 Food: ₹${food}</p>`;
 
   const dt = directTransport.value.toLowerCase();
   if (dt.includes("own")) {
@@ -85,78 +76,65 @@ function renderResult(dest, days, people) {
     html += `<p>✈️ ${dt} — Please check official price. Main transport not included.</p>`;
   }
 
-  if (city.logistics.hub_city && hubTransport.value) {
-    const ht = hubTransport.value.toLowerCase();
-    if (ht.includes("own")) {
-      html += `<p>🚗 Via ${city.logistics.hub_city} — <a href="https://www.yatratools.com/p/fuel-calculator.html" target="_blank">Check fuel price</a></p>`;
-    } else if (ht.includes("train") || ht.includes("flight")) {
-      html += `<p>✈️ Via ${city.logistics.hub_city} — Please check official price. Main transport not included.</p>`;
-    } else if (ht === "bus") {
-      const price = data.bus_prices[`${city.logistics.hub_city}-${dest}`];
-      if (price) {
-        const [busMin, busMax] = makeRange(price * people);
-        html += `<p>🚌 Bus via ${city.logistics.hub_city}: ₹${busMin}–₹${busMax}</p>`;
-        minTotal += busMin;
-        maxTotal += busMax;
-      }
+  if (city.logistics.hub_city && hubTransport.value === "bus") {
+    const route1 = `${city.logistics.hub_city}-${dest}`;
+    const route2 = `${dest}-${city.logistics.hub_city}`;
+    const price = data.bus_prices[route1] || data.bus_prices[route2];
+    if (price) {
+      html += `<p>🚌 Bus via ${city.logistics.hub_city}: ₹${price * people}</p>`;
+      total += price * people;
     }
   }
 
-  html += `<hr>`;
-  html += `<p><strong>Total estimate:</strong> ₹${minTotal}–₹${maxTotal}</p>`;
-  html += `<p class="disclaimer">* Approximate only</p>`;
-
+  html += `<hr><p><strong>Total estimate:</strong> ₹${total}</p>`;
   html += `<button onclick="toggleDetails()">Load more</button>`;
-  html += `<div id="details" style="display:none;margin-top:8px;">${renderAllDetails(city)}</div>`;
+  html += `<div id="details" style="display:none;">${renderDetails(city)}</div>`;
 
   result.innerHTML = html;
-  shareBtn.style.display = "inline-block";
+  shareBtn.style.display="inline-block";
 }
 
-function renderAllDetails(city) {
+function renderDetails(city) {
   return `
-    <h4>Meta</h4>${renderObject(city.meta)}
+    <h4>Info</h4>${renderObject(city.meta)}
     <h4>Logistics</h4>${renderObject(city.logistics)}
     <h4>Scores</h4>${renderObject(city.scores)}
   `;
 }
 
 function renderObject(obj) {
-  let html = "";
+  let h="";
   for (const k in obj) {
-    const label = k.replace(/_/g," ").replace(/\b\w/g,c=>c.toUpperCase());
-    const v = Array.isArray(obj[k]) ? obj[k].join(", ") : obj[k];
-    html += `<p><b>${label}:</b> ${v}</p>`;
+    let v = Array.isArray(obj[k]) ? obj[k].join(", ") : obj[k];
+    h += `<p><b>${k.replace(/_/g," ")}:</b> ${v}</p>`;
   }
-  return html;
+  return h;
 }
 
 function toggleDetails() {
   const d = document.getElementById("details");
-  d.style.display = d.style.display === "none" ? "block" : "none";
+  d.style.display = d.style.display==="none" ? "block" : "none";
 }
 
 function onDestinationSelected(destKey) {
   const c = data.cities[destKey];
 
   if (c.logistics.hub_city) {
-    hubSection.style.display = "block";
+    hubSection.style.display="block";
     hubCity.value = c.logistics.hub_city;
-
     hubTransport.innerHTML = "";
-    c.logistics.hub_transport.forEach(t => {
+    c.logistics.hub_transport.forEach(t=>{
       const o = document.createElement("option");
-      o.value = t;
-      o.textContent = t;
+      o.value=t; o.textContent=t;
       hubTransport.appendChild(o);
     });
   } else {
-    hubSection.style.display = "none";
+    hubSection.style.display="none";
   }
 }
 
 function copyResult() {
-  navigator.clipboard.writeText(result.innerText).then(() => {
-    alert("Trip details copied!");
-  });
+  navigator.clipboard.writeText(result.innerText);
+  alert("Trip details copied!");
 }
+</script>
